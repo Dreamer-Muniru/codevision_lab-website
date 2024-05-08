@@ -134,3 +134,72 @@ section{
 		text-align: center;
 		color: #87152a;
 	}
+
+	/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .banner{
+			background-image: url('../img/banner.jpg');
+		    background-size: cover;
+		    background-position: center;
+		    height: 400px;
+		    width: 100%;
+		   
+		}
+	.header{
+		width: 100%;
+		padding: 0px;
+	}
+	.header p{
+		font-size: 16px;
+	}
+	.intro {
+			display: flex;
+			flex-direction: row;
+        	width: 100%;
+        	margin: 0px;
+    }
+    .intro_heading {
+            padding: 0px;
+           
+    }
+    .intro img {
+			background-color: lightblue;
+		    height: 120px;
+		    width: 50px;
+		    margin-right: 2px;
+		    margin-top: -200px;
+
+        }
+    .intro p {
+            font-size: 14px; 
+        }
+    .ambition {
+			width: 100%;
+	    	margin: 0px;
+		 }
+		.ambition img{
+			background-color: lightblue;
+		    height: 120px;
+		    width: 50px;
+		    margin-right: 2px;
+           	margin-top: -50px;
+		}
+		.ambition p {
+		    font-size: 14px;
+		    line-height: 1.6;
+		}
+
+		.goal{
+			margin-top: 50px;
+			margin-bottom: 10px;
+			padding: 0px;
+			font-size: 30px;
+			font-weight: bold;
+			
+		}
+
+
+/*    ambition  */
+
+
+}
