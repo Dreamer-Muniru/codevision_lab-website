@@ -1,0 +1,136 @@
+/*navbar*/
+
+.navbar-brand img{
+	width: 160px;
+	height: 60px;
+	border-radius: 10px;
+}
+
+section{
+         padding: 50px;
+         background-color: #fff;
+        }
+        .intro_heading {
+        	color: #87152a;
+            padding-left: 290px;
+            font-size: 30px;
+			font-weight: bold;
+        }
+        .intro {
+        	width: 70%;
+        	margin: auto;
+            display: flex;
+            align-items: center;
+        }
+        .intro img {
+            max-width: 60px;
+            margin-right: 20px;
+            border-radius: 50px;
+
+        }
+        .intro p {
+            font-size: 18px;
+            line-height: 1.6;
+            color: grey;
+		    line-height: 24px;
+        }
+
+		.ambition {
+			width: 70%;
+	    	margin: auto;
+	        display: flex;
+		    align-items: center;
+		 }
+		.ambition img{
+		    max-width: 70px;
+		    margin-right: 20px;
+            border-radius: 50px;
+		}
+		.ambition p {
+		    font-size: 18px;
+		    line-height: 1.6;
+		    color: grey;
+		    line-height: 24px;
+		}
+
+		.goal{
+			margin-top: 50px;
+			margin-bottom: -10px;
+			padding-left: 315px;
+			font-size: 30px;
+			font-weight: bold;
+			color: #87152a;
+		}
+
+		.section_card{
+			width: 80%;
+			margin: auto;
+		}
+		.footer{
+			width: 100%;
+			margin-top: 200px;
+		}
+		.footer img{
+			width: 100%;
+		}
+
+		.header{
+			padding-left: 50px;
+			padding-right: 600px;
+		}
+		.header h2, p{
+			text-align: left;
+			padding: 10px;
+			color: #fff;
+			font-weight: bold;
+			font-size: 20px;
+		}
+		.header h2{
+			font-size: 46px;
+			color: #fff;
+		}
+		.btn{
+			align-items: center;
+			background-color: #fff;
+			color: #000;
+			font-weight: bold;
+			justify-content: center;
+			text-align: center;
+		}
+		.banner{
+			background-image: url('../img/banner.jpg');
+		    background-size: cover;
+		    background-position: center;
+		    height: 400px;
+		    width: 100%;
+		   
+		}
+		.section_card h1{
+			text-align: center;
+			color: #87152a;
+			
+		}
+		.card-group h5{
+			text-align: center;
+			font-weight: bold;
+		}
+		.card-text{
+			color: #615a5a;
+			font-size: 16px;
+		}
+		.card img{
+			height: 300px;
+		}
+
+/* Partners styling	*/
+	
+
+	.row-cols-1{
+		width: 80%;
+		margin: auto;
+	}
+	.partners_card h1{
+		margin-top: 50px;
+		text-align: center;
+		color: #87152a;
+	}
