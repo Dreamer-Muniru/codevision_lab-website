@@ -1,150 +1,169 @@
 /*navbar*/
 
+body{
+	width: 100%;
+	height: auto;
+	margin: 0px;
+	padding: 0px;
+}
 .navbar-brand img{
 	width: 160px;
 	height: 60px;
 	border-radius: 10px;
+	animation: shake 0.5s infinite alternate;
 }
 
 section{
-         padding: 50px;
-         background-color: #fff;
-        }
-        .intro_heading {
-        	color: #87152a;
-            padding-left: 290px;
-            font-size: 30px;
-			font-weight: bold;
-        }
-        .intro {
-        	width: 70%;
-        	margin: auto;
-            display: flex;
-            align-items: center;
-        }
-        .intro img {
-            max-width: 60px;
-            margin-right: 20px;
-            border-radius: 50px;
+    padding: 50px;
+    background-color: #fff;
+}
+.intro_heading {
+   	color: #87152a;
+    padding-left: 235px;
+    font-size: 30px;
+	font-weight: bold;
+}
+.intro {
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.intro img {
+    max-width: 60px;
+    margin-right: 20px;
+    border-radius: 50px;
+    animation: shake 0.5s infinite alternate;
+}
+.intro p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: grey;
+	line-height: 24px;
+}
+.ambition {
+	width: 80%;
+	margin: auto;
+	display: flex;
+	align-items: center;
+}
+.ambition img{
+	max-width: 70px;
+	margin-right: 20px;
+    border-radius: 50px;
+    margin-top: -30px;
+    animation: shake 0.5s infinite alternate;
+}
+.ambition p {
+	font-size: 18px;
+	line-height: 1.6;
+	color: grey;
+	line-height: 24px;
+}
+.goal{
+	margin-top: 50px;
+	margin-bottom: -10px;
+	padding-left: 240px;
+	font-size: 30px;
+	font-weight: bold;
+	color: #87152a;
+}
 
-        }
-        .intro p {
-            font-size: 18px;
-            line-height: 1.6;
-            color: grey;
-		    line-height: 24px;
-        }
+.section_card{
+	width: 80%;
+	margin: auto;
+}
+.footer{
+	width: 100%;
+	margin-top: 200px;
+}
+.footer img{
+	width: 100%;
+}
 
-		.ambition {
-			width: 70%;
-	    	margin: auto;
-	        display: flex;
-		    align-items: center;
-		 }
-		.ambition img{
-		    max-width: 70px;
-		    margin-right: 20px;
-            border-radius: 50px;
-		}
-		.ambition p {
-		    font-size: 18px;
-		    line-height: 1.6;
-		    color: grey;
-		    line-height: 24px;
-		}
+.header{
+	padding-left: 50px;
+	padding-right: 600px;
+	transition: all 0.3s ease;
+}
+.header h2, p{
+	text-align: left;
+	padding: 10px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+}
+.btn:hover {
+	opacity: 0.4;
+	background-color: #fff;
+	transform: scale(1.1);
+	color: #000;
+}
+	.header h2{
+	font-size: 46px;
+	color: #fff;
+}
+.btn{
+	align-items: center;
+	background-color: #fff;
+	color: #000;
+	font-weight: bold;
+	justify-content: center;
+	text-align: center;
+}
+.banner{
+	background-image: url('../img/banner.jpg');
+	background-size: cover;
+	background-position: center;
+	height: 400px;
+	width: 100%;    
+}
+/* Animation*/
+	@keyframes shake {
+	0% { transform: translateX(0); }
+	25% { transform: translateX(-5px); }
+	50% { transform: translateX(5px); }
+	75% { transform: translateX(-5px); }
+	100% { transform: translateX(0); }
+}
 
-		.goal{
-			margin-top: 50px;
-			margin-bottom: -10px;
-			padding-left: 315px;
-			font-size: 30px;
-			font-weight: bold;
-			color: #87152a;
-		}
 
-		.section_card{
-			width: 80%;
-			margin: auto;
-		}
-		.footer{
-			width: 100%;
-			margin-top: 200px;
-		}
-		.footer img{
-			width: 100%;
-		}
-
-		.header{
-			padding-left: 50px;
-			padding-right: 600px;
-		}
-		.header h2, p{
-			text-align: left;
-			padding: 10px;
-			color: #fff;
-			font-weight: bold;
-			font-size: 20px;
-		}
-		.header h2{
-			font-size: 46px;
-			color: #fff;
-		}
-		.btn{
-			align-items: center;
-			background-color: #fff;
-			color: #000;
-			font-weight: bold;
-			justify-content: center;
-			text-align: center;
-		}
-		.banner{
-			background-image: url('../img/banner.jpg');
-		    background-size: cover;
-		    background-position: center;
-		    height: 400px;
-		    width: 100%;
-		   
-		}
-		.section_card h1{
-			text-align: center;
-			color: #87152a;
-			
-		}
-		.card-group h5{
-			text-align: center;
-			font-weight: bold;
-		}
-		.card-text{
-			color: #615a5a;
-			font-size: 16px;
-		}
-		.card img{
-			height: 300px;
-		}
+.section_card h1{
+	text-align: center;
+	color: #87152a;	
+}
+.card-group h5{
+	text-align: center;
+	font-weight: bold;
+}
+.card-text{
+	color: #615a5a;
+	font-size: 16px;
+}
+.card img{
+	height: 300px;
+}
 
 /* Partners styling	*/
-	
+.row-cols-1{
+	width: 80%;
+	margin: auto;
+}
+.partners_card h1{
+	margin-top: 50px;
+	text-align: center;
+	color: #87152a;
+}
 
-	.row-cols-1{
-		width: 80%;
-		margin: auto;
-	}
-	.partners_card h1{
-		margin-top: 50px;
-		text-align: center;
-		color: #87152a;
-	}
-
-	/* Media query for smaller screens */
+/* Media query for smaller screens */
 @media (max-width: 768px) {
     .banner{
-			background-image: url('../img/banner.jpg');
-		    background-size: cover;
-		    background-position: center;
-		    height: 400px;
-		    width: 100%;
-		   
-		}
+		background-image: url('../img/banner.jpg');
+	    background-size: cover;
+	    background-position: center;
+	    height: 400px;
+	    width: 100%;	   
+	}
 	.header{
 		width: 100%;
 		padding: 0px;
@@ -152,51 +171,61 @@ section{
 	.header p{
 		font-size: 16px;
 	}
+	.section{
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+	}
+
 	.intro {
-			display: flex;
-			flex-direction: row;
-        	width: 100%;
-        	margin: 0px;
+		display: inline-block;
+       	width: 100%;
+       	margin: 0px;
+       	padding: 0px;
     }
     .intro_heading {
-            padding: 0px;
-           
+        padding: 0px;
+        margin-left: 30px;
+        margin-bottom: -25px;   
     }
+
     .intro img {
-			background-color: lightblue;
-		    height: 120px;
-		    width: 50px;
-		    margin-right: 2px;
-		    margin-top: -200px;
+		background-color: lightblue;
+		height: 40px;
+	    width: 20px;
+	    margin-top: -20px;   
+    }
 
-        }
     .intro p {
-            font-size: 14px; 
-        }
-    .ambition {
-			width: 100%;
-	    	margin: 0px;
-		 }
-		.ambition img{
-			background-color: lightblue;
-		    height: 120px;
-		    width: 50px;
-		    margin-right: 2px;
-           	margin-top: -50px;
-		}
-		.ambition p {
-		    font-size: 14px;
-		    line-height: 1.6;
-		}
+        font-size: 14px;
+    }
 
-		.goal{
-			margin-top: 50px;
-			margin-bottom: 10px;
-			padding: 0px;
-			font-size: 30px;
-			font-weight: bold;
-			
-		}
+    .ambition {
+    	display: inline-block;
+		width: 100%;
+	    margin: 0px;
+	    padding: 0px;
+	}
+	.ambition img{
+		background-color: lightblue;
+		height: 50px;
+		width: 30px;
+		margin-right: 2px;
+        margin-top: -30px;
+	}
+	.ambition p {
+	   	font-size: 14px;
+	   	line-height: 1.6;
+	}
+
+	.goal{
+		margin-top: 10px;
+		margin-bottom: -20px;
+		margin-left: 40px;
+		padding: 0px;
+		font-size: 30px;
+		font-weight: bold;		
+	}
 
 
 /*    ambition  */
