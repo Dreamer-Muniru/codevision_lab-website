@@ -1,108 +1,23 @@
-/*navbar*/
-
+/* body styling */
 body{
 	width: 100%;
 	height: auto;
 	margin: 0px;
 	padding: 0px;
 }
+
+/* Navigation */
 .navbar-brand img{
 	width: 160px;
 	height: 60px;
 	border-radius: 10px;
 	animation: shake 0.5s infinite alternate;
 }
-
-section{
-	margin-top: 20px;
-	padding: 10px;
-    background-color: #fff;
-}
-.intro_heading {
-   	color: #87152a;
-    padding-left: 235px;
-    font-size: 30px;
-	font-weight: bold;
-}
-.intro {
-    width: 80%;
-    margin: auto;
-    display: flex;
-    align-items: center;
-}
-.intro img {
-    max-width: 60px;
-    margin-right: 20px;
-    border-radius: 50px;
-    animation: shake 0.5s infinite alternate;
-}
-.intro p {
-    font-size: 18px;
-    line-height: 1.6;
-    color: grey;
-	line-height: 24px;
-}
-.ambition {
-	width: 80%;
-	margin: auto;
-	display: flex;
-	align-items: center;
-}
-.ambition img{
-	max-width: 70px;
-	margin-right: 20px;
-    border-radius: 50px;
-    margin-top: -30px;
-    animation: shake 0.5s infinite alternate;
-}
-.ambition p {
-	font-size: 18px;
-	line-height: 1.6;
-	color: grey;
-	line-height: 24px;
-}
-.goal{
-	margin-top: 50px;
-	margin-bottom: -10px;
-	padding-left: 240px;
-	font-size: 30px;
-	font-weight: bold;
-	color: #87152a;
-}
-
-.section_card{
-	width: 80%;
-	margin: auto;
-}
-.footer{
-	width: 100%;
-	margin-top: 200px;
-}
-.footer img{
-	width: 100%;
-}
-
-.header{
-	padding-left: 50px;
-	padding-right: 600px;
-	transition: all 0.3s ease;
-}
-.header h2, p{
-	text-align: left;
-	padding: 10px;
-	color: #fff;
-	font-weight: bold;
-	font-size: 20px;
-}
 .btn:hover {
 	opacity: 0.4;
 	background-color: #fff;
 	transform: scale(1.1);
 	color: #000;
-}
-	.header h2{
-	font-size: 46px;
-	color: #fff;
 }
 .btn{
 	align-items: center;
@@ -116,9 +31,29 @@ section{
 	background-image: url('../img/banner.jpg');
 	background-size: cover;
 	background-position: center;
-	height: 400px;
+	height: 500px;
 	width: 100%;    
 }
+.header{
+	padding-left: 50px;
+	padding-right: 600px;
+	transition: all 0.3s ease;
+}
+.header h2, p{
+	text-align: left;
+	padding: 10px;
+	color: #fff;
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.header h2{
+	font-size: 46px;
+	color: #fff;
+}
+/* End of navigation */
+
+
 /* Animation*/
 	@keyframes shake {
 	0% { transform: translateX(0); }
@@ -126,23 +61,6 @@ section{
 	50% { transform: translateX(5px); }
 	75% { transform: translateX(-5px); }
 	100% { transform: translateX(0); }
-}
-
-
-.section_card h1{
-	text-align: center;
-	color: #87152a;	
-}
-.card-group h5{
-	text-align: center;
-	font-weight: bold;
-}
-.card-text{
-	color: #615a5a;
-	font-size: 16px;
-}
-.card img{
-	height: 300px;
 }
 
 /* Partners styling	*/
@@ -155,10 +73,100 @@ section{
 	text-align: center;
 	color: #87152a;
 }
+.partners_container h1{
+	margin-top: 50px;
+	margin-bottom: 30px;
+	font-weight: bold;
+	text-align: center;
+	color: #87152a;	
+}
+.partners_container{
+	width: 80%;
+	margin: auto;
+}
+.card-group h5{
+	text-align: center;
+	font-weight: bold;
+}
+.card-text{
+	color: #615a5a;
+	font-size: 16px;
+}
+.card img{
+	height: 300px;
+}
 .section_card h1{
 	margin-bottom: 20px;
 	font-weight: bold;
 }
+
+/*Mission Section*/
+.mission_container{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+}
+.img_icon img{
+	width: 100px;
+	height: 100px;
+}
+.mission_section{
+	width: 80%;
+	margin: auto;
+	
+}
+.mission_icon{
+	width: 100px;
+}
+.mission_icon img{
+	width: 100px;
+	height: 100px;
+}
+.intro_heading {
+	padding-top: 20px;
+   	color: #87152a;
+    padding-left: 260px;
+    font-size: 30px;
+	font-weight: bold;
+}
+/* Vision Statement Section */
+.vision_container{
+	width: 80%;
+	margin: auto;
+	display: flex;
+	flex-direction: row;
+}
+.vision_container img{
+	margin-top: -20px;
+	width: 120px;
+	height: 100px;
+}
+.goal{
+	margin-top: 100px;
+	margin-bottom: 10px;
+	padding-left: 280px;
+	font-size: 30px;
+	font-weight: bold;
+	color: #87152a;
+}
+/* End of Vision */
+
+
+/* Footer */
+.footer{
+	width: 100%;
+	height: 400px;
+	
+	border: 5px;
+	
+}
+.footer img{
+	margin-top: 130px;
+	width: 100%;
+}
+
+/* End of footer */
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
@@ -197,34 +205,7 @@ section{
         margin-bottom: -25px;   
     }
 
-    .intro img {
-		background-color: lightblue;
-		height: 40px;
-	    width: 20px;
-	    margin-top: -20px;   
-    }
-
-    .intro p {
-        font-size: 14px;
-    }
-
-    .ambition {
-    	display: inline-block;
-		width: 100%;
-	    margin: 0px;
-	    padding: 0px;
-	}
-	.ambition img{
-		background-color: lightblue;
-		height: 50px;
-		width: 30px;
-		margin-right: 2px;
-        margin-top: -30px;
-	}
-	.ambition p {
-	   	font-size: 14px;
-	   	line-height: 1.6;
-	}
+  
 
 	.goal{
 		margin-top: 10px;
@@ -236,7 +217,43 @@ section{
 	}
 
 
-/*    ambition  */
+	/*Mission Section*/
+	.mission_container{
+		width: 100%;
+		margin: 0px;
+		display: flex;
+		margin-top: 30px;
+	}
+	.img_icon img{
+		width: 50px;
+		height: 50px;
+		margin-left: 10px;
+		margin-top: 10px;
+	}
+	.intro_heading {
+		padding-top: 30px;
+		text-align: center;
+		font-size: 40px;
+	}
 
 
+	/* Vision Section */
+	.vision_container{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+	}
+	.vision_container img{
+		margin-top: 10px;
+		margin-left: 10px;
+		width: 50px;
+		height: 50px;
+	}
+	.goal{
+		margin-top: 50px;
+		margin-bottom: 10px;
+		text-align: center;
+		font-size: 40px;
+	
+	}
 }
