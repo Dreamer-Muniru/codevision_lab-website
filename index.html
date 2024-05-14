@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- Header -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <img src="img/logo.jpg">
@@ -23,20 +23,10 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Our Program</a>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            About Us
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Blog</a></li>
-                            <li><a class="dropdown-item" href="#">Our Team</a></li>
-                            <li><hr class="dropdown-divider"></li>
-                        </ul>
+                      <button class="nav-link" id="pills-our_programs-tab" onclick="scrollToPrograms()" data-bs-toggle="pill" data-bs-target="#pills-our_programs" type="button" role="tab" aria-controls="pills-our_programs" aria-selected="false">Our Programs</button>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact</a>
+                        <a class="nav-link" href="contact.html">Contact</a>
                     </li>
                 </ul>
             </div>
@@ -54,7 +44,7 @@
                 Ghana, dedicated to empowering students with essential practical skills in coding, robotics and game development by offering
                 transformative practical educational programs to students across basic, secondary, and tertiary levels of education.
             </p>
-            <button type="button" class="btn btn-primary btn-lg">Learn More</button>
+            <!-- <button type="button" class="btn btn-primary btn-lg">Learn More</button> -->
         </div>
     </div>
 
@@ -97,7 +87,7 @@
   
     
     <!-- Our programs Section -->
-    <div class="partners_container">
+    <div class="partners_container" id="our_programs">
         <h1>About Our Program</h1>
         <div class="card-group">
           <div class="card">
@@ -156,11 +146,17 @@
 
     <!-- Footer -->
     <div class="footer">
-        <img src="img/section_2.png">
+        <h2>Footer</h2>
     </div>
 
     <!-- Bootstrap Javascript file  -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-
+    <script>
+      function scrollToPrograms() {
+          var programsSection = document.getElementById("our_programs");
+          programsSection.scrollIntoView({ behavior: 'smooth' });
+      }
+  </script>
+  
 </body>
 </html>

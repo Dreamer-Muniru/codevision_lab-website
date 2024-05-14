@@ -1,0 +1,54 @@
+
+/* Contact section */
+.contact_container{
+    width: 80%;
+    margin: auto;
+}
+
+/* card */
+.card img{
+    width: 100px;
+    height: 100px;
+}
+.card{
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.card h5, p{
+    text-align: center;
+}
+.contact_container h3, h1{
+    text-align: center;
+    margin-top: 20px;
+}
+
+.email_container{
+    background-color: #000;
+    color: #fff;
+    font-weight: bold;
+}
+
+.email_container:hover{
+    opacity: 0.2;
+	background-color: #f8eeee;
+	transform: scale(1.1);
+	color: #000;
+}
+
+/* Footer */
+.footer{
+	width: 100%;
+	height: 400px;
+	background-color: #fba03b;
+	border: 5px;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	margin-top: 100px;
+	
+}
+
+.footer h2{
+    text-align: center;
+    padding: 20px;
+}

@@ -5,7 +5,16 @@ body{
 	margin: 0px;
 	padding: 0px;
 }
-
+ul li{
+	font-size: 24px;
+	padding: 10px;
+}
+ul li:hover{
+	opacity: 0.4;
+	background-color: #f5f1f1;
+	transform: scale(1.1);
+	color: #000;
+}
 /* Navigation */
 .navbar-brand img{
 	width: 160px;
@@ -157,19 +166,28 @@ body{
 .footer{
 	width: 100%;
 	height: 400px;
-	
+	background-color: #fba03b;
 	border: 5px;
+	border-top-left-radius: 100px;
+	border-top-right-radius: 100px;
+	margin-top: 100px;
 	
 }
 .footer img{
 	margin-top: 130px;
 	width: 100%;
 }
-
+.footer h2{
+    text-align: center;
+    padding: 20px;
+}
 /* End of footer */
 
 /* Media query for smaller screens */
 @media (max-width: 768px) {
+	/* body */
+	
+	/* Banner */
     .banner{
 		background-image: url('../img/banner.jpg');
 	    background-size: cover;
@@ -256,4 +274,13 @@ body{
 		font-size: 40px;
 	
 	}
+	ul li{
+		padding: 0px;
+	}
+	.header{
+		padding-left: 10px;
+		padding-right: 100px;
+		transition: all 0.3s ease;
+	}
+	
 }
