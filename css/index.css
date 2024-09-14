@@ -320,10 +320,12 @@ ul li:hover{
 	margin-top: 50px;
 	height: 500px;
 	color: #fff;
+	text-align: center;
 }
-.course_quality h2{
+.course_quality h1{
 	text-align: center;
 	padding-top: 30px;
+	margin-bottom: 50px;
 	font-size: 40px;
 }
 .course_quality p{
@@ -333,7 +335,7 @@ ul li:hover{
 .course_quality img{
 	width: 120px;
 	height: 120px;
-	margin-left: 80px;
+	
 	border-radius: 20px;
 }
 /* Footer */
@@ -522,7 +524,7 @@ ul li:hover{
 	.course_quality img{
 		width: 80px;
 		height: 100px;
-		margin-left: 140px;
+		
 		border-radius: 20px;
 	}
 	
