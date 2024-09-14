@@ -3,26 +3,29 @@
 .contact_container{
     width: 80%;
     margin: auto;
+    margin-bottom: 100px;
 }
 
 /* card */
-.card img{
+.contact_container .card img{
     width: 100px;
     height: 100px;
 }
-.card{
+.contact_container .card{
     align-items: center;
     justify-content: center;
     padding: 20px;
 }
-.card h5, p{
+.contact_container .card h5, p{
     text-align: center;
 }
 .contact_container h3, h1{
     text-align: center;
     margin-top: 20px;
 }
-
+.contact_container h3{
+    font-size: 40px;
+}
 .email_container{
     background-color: #000;
     color: #fff;
@@ -37,18 +40,25 @@
 }
 
 /* Footer */
-.footer{
-	width: 100%;
-	height: 400px;
-	background-color: #fba03b;
-	border: 5px;
-	border-top-left-radius: 100px;
-	border-top-right-radius: 100px;
+
+.footer_wrapper{
+	width: 80%;
+	margin: auto;
 	margin-top: 100px;
-	
 }
 
+.footer img{
+	width: 200px;
+	height: 60px;
+	overflow: hidden;
+ }
 .footer h2{
+	padding: 70px;
+}
+.footer h4{
+	padding-top: 60px;
+}
+.footer h2 ,h4{
     text-align: center;
-    padding: 20px;
+	color: #000;
 }

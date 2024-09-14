@@ -19,3 +19,66 @@ body{
 .banner h2{
     padding-top: 100px;
 }
+.course_selection .col{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 5px;
+    height: 500px;
+}
+.course_selection .card{
+    background-color: #111731;
+    color: #fff;
+    text-align: center;
+    height: auto;
+    padding: 20px;
+}
+.course_selection{
+    width: 80%;
+    margin: auto;
+    height: auto;
+    margin-top: 50px;
+    margin-bottom: 150px;
+
+}
+.course_selection h1{
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.course_selection .card-body{
+    height: 250px;
+    color: #2d2626;
+    margin-top: 20px;
+}
+
+.course_selection p{
+    color: #312525;
+}
+
+.course_selection a{
+    text-decoration: none;
+    width: 100px;
+    height: 80px;
+    background-color: #87152a;
+    color: #fff;
+    font-size: 20px;
+    border-radius: 10px;
+    padding: 10px;
+    margin-left: 120px;
+}
+
+@media (max-width: 768px){
+    .course_selection{
+        width: 90%;
+        margin: auto;
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 100px;
+    
+    }
+    .course_selection .col{
+        margin-bottom: 30px;
+    }
+    .course_selection h1{
+        font-size: 40px;
+    }
+}
