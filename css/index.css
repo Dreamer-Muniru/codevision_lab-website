@@ -31,8 +31,7 @@ ul li{
 	padding: 10px;
 }
 ul li:hover{
-	opacity: 0.4;
-	background-color: #f5f1f1;
+	opacity: 0.8;
 	transform: scale(1.1);
 	color: #000;
 }
@@ -41,6 +40,9 @@ ul li:hover{
 	height: 500px;
 	padding: 20px;
 	transition: all 0.3s ease;
+}
+#pills-our_programs-tab-tab{
+	background-color: #a32a40;
 }
 .header h2, p{
 	padding: 10px;
