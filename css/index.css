@@ -430,6 +430,9 @@ ul li:hover{
 		width: 100%;
 		    
 	}
+	.banner_paragraph{
+		padding-top: 30px;
+	}
 	.banner img{
 		width: 320px;
 		height: 400px;
