@@ -371,6 +371,13 @@ ul li:hover{
     text-align: center;
 	color: #000;
 }
+.footer h4{
+	background-color: #f5c5cc;
+	padding: 2px;
+	width: 400px;
+	text-align: center;
+	margin: auto;
+}
 .footer links{
 	display: block !important;
 }
@@ -570,6 +577,13 @@ ul li:hover{
 	.footer h2 ,h4{
 		text-align: center;
 		color: #000;
+	}
+	.footer h4{
+		background-color: #f5c5cc;
+		padding: 5px;
+		height: 30px;
+		margin: 0px;
+		border-radius: 10px;
 	}
 	
 	
