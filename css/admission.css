@@ -63,7 +63,25 @@ body{
     font-size: 20px;
     border-radius: 10px;
     padding: 10px;
+    margin-top: 50px;
     margin-left: 120px;
+}
+
+.card-body p{
+    font-size: 16px;
+    text-align: left;
+    color: rgb(132, 126, 126);
+}
+.card-body span{
+    color: rgb(52, 35, 35);
+    font-weight: bold;
+   margin: 0px;
+}
+.card h4{
+    color: #fff;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: left;
 }
 
 @media (max-width: 768px){
