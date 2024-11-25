@@ -84,6 +84,11 @@ body{
     text-align: left;
 }
 
+.intro_heading{
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
 @media (max-width: 768px){
     .course_selection{
         width: 90%;
