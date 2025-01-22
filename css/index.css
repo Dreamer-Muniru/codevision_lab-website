@@ -202,9 +202,9 @@ ul li:hover{
 	margin-bottom: 20px;
 }
 
-.courses_wrapper{
-	
-	
+.courses_column span{
+	margin-top: -50px;
+	margin-left: 200px;
 }
 .courses_column h3{
 	text-align: center;
@@ -416,17 +416,17 @@ ul li:hover{
 	}
 
 	.courses_wrapper{
-		width: 90%;
+		width: auto;
 		overflow: hidden;
 		
 	}
-	.courses_container{
+	/* .courses_container{
 		width: 100%;
 		margin: 0;
 		height: auto;
 		border-radius: 0px;
 		overflow: hidden;
-	}
+	} */
 	.courses_wrapper img{
 		width:  230px;
 		
@@ -455,8 +455,11 @@ ul li:hover{
 	.col-6{
 		width: 100%;
 	}
+	.courses_column{
+		width: 100%;
+	}
 	.courses_column img{
-		width: 300px;
+		width: auto;
 		height: 150px;
 	}
 	.intro_heading {
