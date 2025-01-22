@@ -5,7 +5,7 @@ body{
 }
 /* Application status */
 .application_status{
-	background-color: #87152a;
+	background-color: #313c74;
 	color: #fff;
 	width: 100%;
 	height: 40px;
@@ -15,6 +15,7 @@ body{
 .application_status h2{
 	font-size: 16px;
 	text-align: center;
+	font-weight: bold;
 	padding: 10px;
 	font-family: "Lucida Console", Courier, monospace;
 
@@ -168,14 +169,7 @@ ul li:hover{
 	font-weight: bold;
 }
 /* Our courses */
- .courses_container{
-	width: 80%;
-	margin: auto;
-	background-color: #111731;
-	margin-top: 50px !important;
-	height: auto;
-	border-radius: 10px;
-}
+
 .courses_column{
 	border: 1px solid #87152a;
 	background-color: #f5f1f1;
@@ -185,8 +179,16 @@ ul li:hover{
 	color: #251f1f;
 } */
 
-
-
+.our_programs{
+	background-image: url("../img/Twitter-Banner-GIF.gif");
+}
+.our_programs h1{
+	color: #fff;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 50px;
+	margin-bottom: 20px;
+}
 .courses_wrapper p{
 	color: #382525;
 	font-size: 18px;
@@ -199,12 +201,12 @@ ul li:hover{
 	text-align: center;
 	margin-bottom: 20px;
 }
+
 .courses_wrapper{
-	width: 90%;
-	margin: auto;
+	
 	
 }
-.courses_container h3{
+.courses_column h3{
 	text-align: center;
 	background-color: #87152a;
 	color: #fff;
