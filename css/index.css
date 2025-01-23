@@ -414,9 +414,12 @@ ul li:hover{
 		background-color: #fff !important;
 		width: 100%;
 	}
-
+	.our_programs{
+		width: 100%;
+		overflow: hidden;
+	}
 	.courses_wrapper{
-		width: auto;
+		width: 100%;
 		overflow: hidden;
 		
 	}
@@ -457,6 +460,7 @@ ul li:hover{
 	}
 	.courses_column{
 		width: 100%;
+		overflow: hidden;
 	}
 	.courses_column img{
 		width: auto;
