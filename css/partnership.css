@@ -1,0 +1,21 @@
+
+
+.contact_container img{
+    width: 700px;
+    height: 600px;
+}
+.col{
+    background-color: lightgray;
+}
+.text_grid{
+    margin: 50px;
+}
+
+.text_grid h2{
+    font-weight: bold;
+    font-size: 40px;
+}
+.text_grid p{
+    padding-top: 50px;
+    font-weight: 400;
+}
