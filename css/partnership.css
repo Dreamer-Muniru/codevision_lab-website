@@ -1,11 +1,11 @@
 
 
 .contact_container img{
-    width: 700px;
+    width: 800px;
     height: 600px;
 }
-.col{
-    background-color: lightgray;
+.contact_container .col{
+    background-color: rgb(238, 233, 233);
 }
 .text_grid{
     margin: 50px;
