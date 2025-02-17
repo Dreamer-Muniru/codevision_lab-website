@@ -61,3 +61,7 @@
 .discript_text .card-text{
     font-size: 30px;
 }
+
+.card-body a{
+    background-color: #f2f2f2;
+}
