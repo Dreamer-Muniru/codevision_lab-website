@@ -365,6 +365,7 @@ ul li:hover{
  }
 .footer h2{
 	padding: 70px;
+	font-size: 18px;
 }
 .footer h4{
 	padding-top: 60px;
@@ -375,6 +376,7 @@ ul li:hover{
 }
 .footer h4{
 	background-color: #f5c5cc;
+	border-radius: 5px;
 	padding: 2px;
 	width: 400px;
 	text-align: center;
