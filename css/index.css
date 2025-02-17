@@ -64,7 +64,7 @@ ul li:hover{
 	width: 160px;
 	height: 60px;
 	border-radius: 10px;
-	animation: shake 0.5s infinite alternate;
+	/* animation: shake 0.5s infinite alternate; */
 } 
 .btn:hover {
 	opacity: 0.4;

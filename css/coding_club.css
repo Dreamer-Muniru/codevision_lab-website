@@ -30,7 +30,7 @@
     font-size: 30px;
 }
 .code_wrapper p{
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .code_wrapper img{
@@ -45,4 +45,19 @@
 .robotic_kit img{
     width: 200px;
     height: 160px;
+}
+
+.code_wrapper .card-body img{
+    width: 350px;
+    height: 150px;
+}
+.code_wrapper h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.discript_text .card-text{
+    font-size: 30px;
 }
