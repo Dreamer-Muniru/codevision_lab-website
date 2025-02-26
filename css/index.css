@@ -262,6 +262,25 @@ ul li:hover{
 
 /* End of our courses */
 
+/* our alumni */
+.our_alumni{
+	background-image: url("../img/bg_image.jpg");
+	padding: 20px;
+}
+.our_alumni p{
+	font-weight: 400;
+}
+.our_alumni h2{
+	text-align: center;
+	margin-top: 50px;
+}
+.header_discrip{
+	width: 60%;
+	margin: auto;
+}
+
+/* End of alumni */
+
 /*Mission Section*/
 .mission_container{
 	width: 80%;
