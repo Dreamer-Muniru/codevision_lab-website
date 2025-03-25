@@ -1,283 +1,969 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Codevision Lab</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-</head>
-<body>
-  <div class="application_status">
-    <h2>Admission is in progress, join the March 2025 Cohort </h2>
-  </div>
-    <!-- Header -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="img/logo.jpg">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <!-- <li class="nav-item ">
-                      <button class="nav-link" id="pills-our_programs-tab" onclick="scrollToPrograms()" data-bs-toggle="pill" data-bs-target="#pills-our_programs" type="button" role="tab" aria-controls="pills-our_programs" aria-selected="false">Our Programs</button>
-                    </li> -->
-                    <li class="nav-item dropdown" id="pills-our_programs-tab" type="button" role="tab" aria-controls="pills-our_programs" aria-selected="false" >
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Our Programs
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="codingClub.html">Coding Club</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="Hire_Graduate.html">Hire our Graduate</a></li>
-                      </ul>
-                    </li>
-            
-                    <li class="nav-item">
-                        <a class="nav-link" href="partnership.html">Partnership</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact</a>
-                    </li>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Codevision Lab</title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="Software Development Company" name="description">
+
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700,800,900&display=swap" rel="stylesheet"> 
+
+        <!-- Libraries CSS -->
+        <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Main Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+    </head>
+
+    <body>
+        <!-- Nav Start -->
+        <div id="nav">
+            <div class="container-fluid">
+                <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                    <a href="index.html" class="navbar-brand">
+                        <img src="img/logo.jpg" alt="Logo">
+                    </a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav ml-auto">
+                            <a href="index.html" class="nav-item nav-link active">Home</a>
+                            <a href="about.html" class="nav-item nav-link">About</a>
+                            <a href="service.html" class="nav-item nav-link">Service</a>
+                            <a href="portfolio.html" class="nav-item nav-link">Portfolio</a>
+                           <!-- <div class="nav-item dropdown">
+                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
+                                <div class="dropdown-menu">
+                                    <a href="team.html" class="dropdown-item">Team Members</a>                                 
+                                    <a href="client.html" class="dropdown-item">Clients</a>
+                                </div>
+                            </div>-->
+                            <a href="contact.html" class="nav-item nav-link">Contact</a>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!-- Nav End -->
+
+        <!-- Header Start-->
+        <div class="header">
+            <div id="header-slider" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ul class="carousel-indicators">
+                    <li data-target="#header-slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#header-slider" data-slide-to="1"></li>
+                    <li data-target="#header-slider" data-slide-to="2"></li>
                 </ul>
+
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="carousel-content">
+                                    <h2>The Future of Digital Starts Now</h2>
+                                    <p>
+                                        Elevate and expand your business by harnessing cutting-edge technology.
+                                     </p>
+                                    <a class="btn" href="">Read More</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="carousel-img">
+                                    <img src="img/flyer.jpg" alt="Image">
+                                </div>
+                            </div>
+                        </div>   
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="carousel-content">
+                                    <h2>Codevision Lab</h2>
+                                    <p>
+                                        is Ghana’s leading software development firm based in Upper East Region with vast experience in 
+                                        the design, development and implementation of computerized 
+                                    </p>
+                                    <a class="btn" href="">Read More</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="carousel-img">
+                                    <img src="img/flyer.jpg" alt="Image">
+                                </div>
+                            </div>
+                        </div>   
+                        </div>   
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="carousel-content">
+                                    <h2>Codevision Lab</h2>
+                                    <p>
+                                        is Ghana’s leading software development firm based in Upper East Region with vast experience in 
+                                        the design, development and implementation of computerized 
+                                    </p>
+                                    <a class="btn" href="">Read More</a>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="carousel-img">
+                                    <img src="img/flyer.jpg" alt="Image">
+                                </div>
+                            </div>
+                        </div>   
+                        </div>   
+                    </div>
+                </div>
+
+                <a class="carousel-control-prev" href="#header-slider" data-slide="prev">
+                    <i class="ion-ios-arrow-back"></i>
+                </a>
+                <a class="carousel-control-next" href="#header-slider" data-slide="next">
+                    <i class="ion-ios-arrow-forward"></i>
+                </a>
             </div>
         </div>
-    </nav>
-    <!-- End of Header -->
+        <!-- Header End-->
 
-   
-
-    <!-- Banner -->
-    <div class="row row-cols-1 row-cols-md-2 g-4 banner">
-        <div class="col header">
-            <h2>Your Digital Career Partner</h2>
-            <span class="banner_intro">Join a Rapidly Growing Market<span> <br>
-            <p class="banner_paragraph">
-              Demand for Software Developers is projected to grow 22% per year, which indicates that all 
-              companies - not just startups are evolving to become tech companies.
-            </p>
-            <a href="admission.html" class="learners">Enrol Now</a>
-            <!-- <button type="button" class="btn btn-primary btn-lg">Learn More</button> -->
-        </div>
-        <div class="col banner_img">
-          <img src="img/banner2.png" />
-        </div>
-    </div>
-
-  <!-- Our programs Section -->
-  <div class="container-fluid our_programs">
-    <h1>Our Courses</h1>
-    <div class="container courses_wrapper">
-      <div class="row g-4">
-        <div class="col-4 courses_column">
-          <h3>Web Design  </h3>
-          <img src="img/IMG_20210727_165912.jpg" >
-          <p>
-            This 7-week course includes 4 weeks of intensive, hands-on coding lessons and 3 weeks 
-            of online mentorship and job assistance. By the end of the program, you'll transform from
-             a novice into a confident, entry-level Web Designer.
-          </p>
-        </div>
-        
-        <div class="col-4 courses_column">
-          <h3>Full Stack Web Development</h3>
-          <img src="img/fullstack.webp">
-          <p>
-            This 4-month comprehensive course in Full Stack Software Development equips you with the skills
-             to build both front-end and back-end applications. Gain proficiency across the Full Stack and 
-             become a well-rounded developer ready for the industry.
-          </p>
-        </div>
-        <div class="col-4 courses_column">
-          <h3>Mobile App Development  </h3>
-          <img src="img/mobile_app.webp" class="adjust_image">
-          <p>
-            This 3-month course is designed to transform you from a novice into a confident, entry-level
-             Mobile App Developer. Learn to design and build functional mobile applications while mastering
-              essential development tools and techniques.
-          </p>
-        </div>
-        <div class="book_consult">
-          <h5>Not sure where to begin?</h5>
-          <a href="#">Book Free Consultation</a>
-        </div>
-        
-        
-      </div>
-    </div>
-    </div>
-  </div>
-    
-</div>
-
-
-<!-- Mission and Vision Section -->
-    <h1 class="intro_heading">Our Mission</h1>
-    <div class="mission_container">
-      <div class="img_icon">
-        <img src="img/mission.png" class="card-img-top" alt="icon">
-      </div>
-      <div class="text_content">
-        <p class="card-text">
-          CodeVision's mission is to bridge the digital divide in Ghana by providing practical
-          technology education to students, enabling them to develop real-world
-          applications and products. Our organization is committed to equipping students
-          with modern technological advancements, fostering innovation, and preparing
-          them for the challenges of the digital era.
-        </p>
-      </div>
-    </div>
-<!-- End of mission -->
-
-
-<!-- Vision Statement Section-->
-    <h1 class="goal">Our Vision</h1>
-    <div class="vision_container">
-      <div class="vision_icon">
-        <img src="img/vision.png" />
-      </div>
-      <div class="text_content">
-        <p class="card-text">
-          Our vision is to create a future where every Ghanaian student has the opportunity
-           to excel in the digital world, equipped with the skills and knowledge to drive
-           innovation and contribute to national development. 
-        </p> 
-      </div>
-    </div>
-
-  <!-- End of vision station -->
-  
-    
-  
-
-      <!-- Our Course Qualities -->
-      <div class="course_quality">
-        <h1>CodeVision Lab Course Qualities</h1>
-        <div class="row row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <img src="img/project_img.png" alt="Icon of project">
-            <h2>Project - Base</h2>
-            <p>Build real products while learning</p>
-          </div>
-          <div class="col">
-            <img src="img/certificate_img.png" alt="Icon of certificaate" >
-            <h2>Certification</h2>
-            <p>Finish the path to get a certificate</p>
-            
-          </div>
-          <div class="col">
-            <img src="img/money_img.png">
-            <h2>Affordable</h2>
-            <p>Pay monthly, enjoy discounts by paying upfront</p>
-          </div>
-        </div>
-      </div>
-<!-- 
-  Our alumni stories
--->
-
-<div class="container-fluid our_alumni mt-5">
-  <h2>The CodeVision Lab Journey</h2>
-  <div class="header_discrip">
-    <p>
-      We believe opportunity and ambition is everywhere. What’s missing is a conducive environment. 
-      Our ambition is to create the missing conducive environment that births new generations of developers 
-      solving local problems in the most innovative ways.
-    </p>
-  </div>
-  
-  <div class="row align-items-center">
-      <!-- Left Column: Text -->
-      <div class="col-md-6">
-          <h2>Transforming Beginners into Innovators</h2>
-          <p>
-              At CodeVision Lab, we empower aspiring programmers with the skills and confidence to build real-world projects. 
-              Our hands-on training has transformed complete beginners into skilled developers, capable of working on advanced 
-              projects. This is the story of one of our alumni who started as a novice and has now 
-              built his own OS. Watch his journey and see the impact of CodeVision Lab.
-          </p>
-      </div>
-      
-      <!-- Right Column: YouTube Video -->
-      <div class="col-md-6">
-          <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/26qi_9bYAho" title="YouTube video" allowfullscreen></iframe>
-          </div>
-      </div>
-  </div>
-</div>
-
-<!-- 
-  End of Our alumni stories
--->
-    <!-- Our Partners section -->
-        <div class="partners_card">
-            <h1>Our Esteemed Partners</h1>
-        </div>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-              <div class="col">
-                <div class="card h-100">
-                  <img src="img/icon.png" class="card-img-top" alt="digital Garu">
+        <!-- About Start-->
+        <div class="about">
+            <div class="container">
+                <div class="section-header">
+                    <h2>About Us</h2>
+                    <p>
+                        At Codevision Lab, we bring ideas to life through cutting-edge software development and innovative 
+                        digital branding solutions. Specializing in desktop applications, web applications, and mobile 
+                        applications, we craft seamless and efficient software tailored to meet the unique needs of 
+                        businesses and individuals.
+                    </p>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <img src="img/ferndi.jpg" class="card-img-top" alt="...">
+                
+                <div class="row align-items-center">
+                    <div class="col-md-12">
+                        <div class="about-img">
+                            <img src="img/abt_banner.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="about-content">
+                            <h2>Welcome to Our Site</h2>
+                            <p>
+                                Beyond software, we help brands establish a strong digital presence through strategic branding, 
+                                ensuring they stand out in the competitive digital landscape. Our team of skilled developers, 
+                                designers, and strategists work together to deliver high-quality, user-friendly, and scalable solutions.
+                            </p>
+                            <a class="btn" href="#">Read More</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <img src="img/yic.jpg" class="card-img-top" alt="...">
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="about-img">
+                            <img src="img/about-story.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="about-content">
+                            <h2>Our Story</h2>
+                            <p>
+                                We enhance the foundation of operations, systems, and product development, optimizing workflows to reduce expenses and drive expansion.
+                                By combining our technological expertise, strong collaborations, and flexible resources, we shape the future of digital transformation.
+                            </p>
+                            <a class="btn" href="#">Read More</a>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="about-img">
+                            <img src="img/about-goal.jpg" alt="" class="img-fluid">
+                        </div>
+                        <div class="about-content">
+                            <h2>Our Vision</h2>
+                            <p>
+                                Leverage digital solutions to bridge connections between clients, stakeholders, and talent, driving impactful business results and fostering a sustainable, innovation-focused ecosystem that thrives in an evolving digital landscape.
+                            </p>
+                            <a class="btn" href="#">Read More</a>
+                        </div>
+                    </div>
                 </div>
-              </div>
+            </div>
+        </div>
+        <!-- About End -->
+
+        <!-- Service Start -->
+        <div class="service">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Services</h2>
+                    <p>
+                        We Provide a Diverse Range of Tech Solutions
+                    </p>
+                </div>
+                <div class="row">
+                    
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <img src="img/user_interface.png"/>
+                            </div>
+                            <div class="service-detail">
+                                <h4><a href="">UI/UX Design</a></h4>
+                                <p>
+                                    We craft intuitive and engaging user interfaces with a focus on seamless user experiences,
+                                     ensuring accessibility, functionality, and aesthetic appeal across all platforms. 
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <img src="img/mobile_app.webp"/>
+                            </div>
+                            <div class="service-detail">
+                                <h4><a href="">Mobile App Development</a></h4>
+                                <p>
+                                    We build intuitive and high-performance mobile applications for iOS and Android, 
+                                    ensuring seamless user experiences and robust functionality tailored to your needs
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <img src="img/cloud_devops.webp"/>
+                            </div>
+                            <div class="service-detail">
+                                <h4><a href="">Cloud & DevOps</a></h4>
+                                <p>
+                                    We streamline deployment, scalability, and infrastructure management with cloud solutions
+                                     and DevOps best practices, ensuring efficiency, security, and continuous integration.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <img src="img/Artificial_ai.webp"/>
+                            </div>
+                            <div class="service-detail">
+                                <h4><a href="">Artificial Intelligence</a></h4>
+                                <p>
+                                    We develop AI-powered solutions that enhance automation, decision-making, and user 
+                                    interactions, leveraging machine learning and deep learning technologies for smarter 
+                                    systems.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <img src="img/digital_engineering.webp"/>
+                            </div>
+                            <div class="service-detail">
+                                <h4><a href="">Enterprise Solution</a></h4>
+                                <p>
+                                    We design and develop cutting-edge digital solutions, integrating advanced technologies 
+                                    to optimize performance, scalability, and user experience across various platforms.   
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <img src="img/consulting.webp"/>
+                            </div>
+                            <div class="service-detail">
+                                <h4><a href="">Consulting Services</a></h4>
+                                <p>
+                                    We provide expert guidance on software development, digital transformation, and technology 
+                                    strategies, helping businesses optimize operations and drive innovation.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 col-md-4 col-lg-3">
+                        <div class="service-item">
+                            <div class="service-icon">
+                                <img src="img/data_analytics.webp"/>
+                            </div>
+                            <div class="service-detail">
+                                <h4><a href="">Data Analytics</a></h4>
+                                <p>
+                                    We transform raw data into actionable insights using advanced analytics and AI-driven 
+                                    techniques, empowering businesses to make informed, data-driven decisions.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Service End -->
+
+        <!-- Call To Action Start -->
+        <div class="call-to-action">
+            <div class="container text-center">
+                <div class="section-header">
+                    <h2>Reach out to us! We’re available 24/7 to assist you.</h2>
+                    <p>
+                        READY TO KICKSTART YOUR PROJECT?
+                    </p>
+                </div>
+                <a class="btn" href="#">Request a Quote</a>
+            </div>
+        </div>
+        <!-- Call To Action End -->
+
+        <!--Pricing start-->
+      <!--  <div class="pricing">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Pricing</h2>
+                    <p>
+                        Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas 
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="price-content">
+                            <div class="price-plan">
+                                <i class="ion-md-home"></i>
+                                <p class="price-title">Silver</p>
+                                <h2 class="price-amount"><span>$</span>9<span>.99</span><span> / m</span></h2>
+                            </div>
+                            <ul class="price-details">
+                                <li><i class="ion-md-checkmark"></i><strong>HTML5</strong> and <strong>CSS3</strong></li>
+                                <li><i class="ion-md-checkmark"></i><strong>Bootstrap 4</strong></li>
+                                <li><i class="ion-md-checkmark"></i><strong>Well-commented</strong> code</li>
+                                <li><i class="ion-md-close"></i><strong>IonIcons</strong> integrated</li>
+                                <li><i class="ion-md-close"></i>Free <strong>Google Font</strong> integrated</li>
+                                <li><i class="ion-md-close"></i><strong>Responsive</strong> design</li>
+                            </ul>
+                            <a href="#" class="btn mian-btn price-btn">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="price-content features-price">
+                            <div class="price-plan">
+                                <i class="ion-md-star"></i>
+                                <p class="price-title">Gold</p>
+                                <h2 class="price-amount"><span>$</span>19<span>.99</span><span> / m</span></h2>
+                            </div>
+                            <ul class="price-details">
+                                <li><i class="ion-md-checkmark"></i><strong>HTML5</strong> and <strong>CSS3</strong></li>
+                                <li><i class="ion-md-checkmark"></i><strong>Bootstrap 4</strong></li>
+                                <li><i class="ion-md-checkmark"></i><strong>Well-commented</strong> code</li>
+                                <li><i class="ion-md-checkmark"></i><strong>IonIcons</strong> integrated</li>
+                                <li><i class="ion-md-checkmark"></i>Free <strong>Google Font</strong> integrated</li>
+                                <li><i class="ion-md-close"></i><strong>Responsive</strong> design</li>
+                            </ul>
+                            <a href="#" class="btn mian-btn price-btn features-price-btn">Buy Now</a>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="price-content">
+                            <div class="price-plan">
+                                <i class="ion-md-gift"></i>
+                                <p class="price-title">Platinum</p>
+                                <h2 class="price-amount"><span>$</span>29<span>.99</span><span> / m</span></h2>
+                            </div>
+                            <ul class="price-details">
+                                <li><i class="ion-md-checkmark"></i><strong>HTML5</strong> and <strong>CSS3</strong></li>
+                                <li><i class="ion-md-checkmark"></i><strong>Bootstrap 4</strong></li>
+                                <li><i class="ion-md-checkmark"></i><strong>Well-commented</strong> code</li>
+                                <li><i class="ion-md-checkmark"></i><strong>IonIcons</strong> integrated</li>
+                                <li><i class="ion-md-checkmark"></i>Free <strong>Google Font</strong> integrated</li>
+                                <li><i class="ion-md-checkmark"></i><strong>Responsive</strong> design</li>
+                            </ul>
+                            <a href="#" class="btn mian-btn price-btn">Buy Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <!--Pricing End-->
+
+        <!-- Skills Start-->
+        <div class="skills">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Skills</h2>
+                   <!-- <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac lacus eget nunc imperdiet 
+                    </p>-->
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="skill-item">
+                            <h3>Front End Skills</h3>
+                            <div class="skill-name">
+                                <p>HTML</p><p>100%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            
+                            <div class="skill-name">
+                                <p>CSS</p><p>100%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            
+                            <div class="skill-name">
+                                <p>Bootstrap</p><p>100%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+                            <div class="skill-name">
+                                <p>jQuery</p><p>100%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+
+                            <div class="skill-name">
+                                <p>Javascript</p><p>100%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="skill-name">
+                                <p>Tailwincss</p><p>100%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="skill-name">
+                                <p>React.js</p><p>100%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="skill-name">
+                                <p>Angula</p><p>100%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="skill-item">
+                            <h3>Back End Skills</h3>
+                            <div class="skill-name">
+                                <p>Node.js & Express</p><p>100%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="skill-name">
+                                <p>Python & Django</p><p>100%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="skill-name">
+                                <p>Java</p><p>100%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="skill-name">
+                                <p>Kotlin</p><p>100%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            <div class="skill-name">
+                                <p>Ruby</p><p>100%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            
+                            <div class="skill-name">
+                                <p>PHP</p><p>100%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            
+                            <div class="skill-name">
+                                <p>Laravel</p><p>100%</p>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                            
+                            <div class="skill-name">
+                                <p>MySQL</p><p>100%</p>, etc
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Skills End-->
+        
+        
+        <!-- Counters Start-->
+        <div class="counters">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3 col-6 text-center">
+                        <i class="ion-md-person"></i>
+                        <h2 data-toggle="counter-up">11</h2>
+                        <p>Our Staffs</p>
+                    </div>
+
+                    <div class="col-lg-3 col-6 text-center">
+                        <i class="ion-md-people"></i>
+                        <h2 data-toggle="counter-up">67</h2>
+                        <p>Our Clients</p>
+                    </div>
+
+                    <div class="col-lg-3 col-6 text-center">
+                        <i class="ion-md-checkmark"></i>
+                        <h2 data-toggle="counter-up">82</h2>
+                        <p>Completed Projects</p>
+                    </div>
+
+                    <div class="col-lg-3 col-6 text-center">
+                        <i class="ion-md-trending-up"></i>
+                        <h2 data-toggle="counter-up">43</h2>
+                        <p>Running Projects</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Counters End-->
+
+        <!-- Portfolio Start -->
+        <div class="portfolio">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Portfolio</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac lacus eget nunc imperdiet 
+                    </p>
+                </div>
+
+                <div class="row portfolio-container">
+                    <div class="col-lg-4 col-md-6 portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="img/chaleride.png" class="img-fluid" alt="Portfolio">
+                            <a href="img/chaleride.png" data-lightbox="portfolio" data-title="chaleride is a ride hailing platform" class="link-preview" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="https://chaleride.com" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </div>
+
+                        <div class="portfolio-info">
+                            <h3>chaleride</h3>
+                            <p>Web & Ionic Mobile App</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="img/baharun.png" class="img-fluid" alt="Portfolio">
+                            <a href="img/baharun.png" class="link-preview" data-lightbox="portfolio" data-title="Baharunndadaa is an electronic store" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="https://baharunnadaa.com" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </div>
+
+                        <div class="portfolio-info">
+                            <h3>Baharunndadaa electronic store</h3>
+                            <p>Web Application</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="img/ihwan.png" class="img-fluid" alt="ihwan foundation">
+                            <a href="img/ihwan.png" class="link-preview" data-lightbox="portfolio" data-title="ihwan foundation" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="http://ihwanfoundation.org" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </div>
+
+                        <div class="portfolio-info">
+                            <h3>Ihwan Foundation</h3>
+                            <p>Web Application</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="img/toprank.png" class="img-fluid" alt="Toprank website">
+                            <a href="img/toprank.png" data-lightbox="portfolio" data-title="Toprank office platform" class="link-preview" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="https://toprank.devcongress.org/" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </div>
+
+                        <div class="portfolio-info">
+                            <h3>Toprank Academy</h3>
+                            <p>Web Application</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="img/classlink.jpg" class="img-fluid" alt="Portfolio">
+                            <a href="img/classlink.jpg" class="link-preview" data-lightbox="portfolio" data-title="ClassLink Teacher booking app" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </div>
+
+                        <div class="portfolio-info">
+                            <h3>ClassLink App</h3>
+                            <p>React-Native Mobile App</p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 portfolio-item">
+                        <div class="portfolio-img">
+                            <img src="img/portfolio-6.jpg" class="img-fluid" alt="Portfolio">
+                            <a href="img/portfolio-6.jpg" class="link-preview" data-lightbox="portfolio" data-title="Financial Budget tracking app" title="Preview"><i class="ion-md-eye"></i></a>
+                            <a href="" class="link-details" title="More Details"><i class="ion-md-open"></i></a>
+                        </div>
+
+                        <div class="portfolio-info">
+                            <h3>Ferndi</h3>
+                            <p>Flutter Mobile App</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio End -->
+        
+        <!-- Team Start -->
+        <div class="team">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Meet our team</h2>
+                    <!--<p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac lacus eget nunc imperdiet 
+                    </p>-->
+                </div>
+
+                <div class="row">
+                    <div class="col-lg-3 col-sm-6 team-item">
+                        <div class="team-img">
+                            <img src="img/starlet.jpeg" class="img-fluid" alt="Team Member">
+                            <div class="team-social">
+                                <a href="#"><i class="ion-logo-twitter"></i></a>
+                                <a href="#"><i class="ion-logo-facebook"></i></a>
+                                <a href="#"><i class="ion-logo-linkedin"></i></a>
+                                <a href="#"><i class="ion-logo-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h3>Rasheed A. Starlet</h3>
+                            <p> CTO and Full Stack Developer</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-sm-6 team-item">
+                        <div class="team-img">
+                            <img src="img/munirudreamer.png" class="img-fluid" alt="Team Member">
+                            <div class="team-social">
+                                <a href="#"><i class="ion-logo-twitter"></i></a>
+                                <a href="#"><i class="ion-logo-facebook"></i></a>
+                                <a href="#"><i class="ion-logo-linkedin"></i></a>
+                                <a href="#"><i class="ion-logo-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h3>Mohammed Muniru</h3>
+                            <p>Mobile App Developer</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-sm-6 team-item">
+                        <div class="team-img">
+                            <img src="img/prof.jpg" class="img-fluid" alt="Team Member">
+                            <div class="team-social">
+                                <a href="#"><i class="ion-logo-twitter"></i></a>
+                                <a href="https://web.facebook.com/muniru.dreamer/"><i class="ion-logo-facebook"></i></a>
+                                <a href="www.linkedin.com/in/muniru-dreamer-a6826016a"><i class="ion-logo-linkedin"></i></a>
+                                <a href="#"><i class="ion-logo-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h3>Alhassan Mohammed</h3>
+                            <p>CEO & UI/UX Designer</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-lg-3 col-sm-6 team-item">
+                        <div class="team-img">
+                            <img src="img/gameboy.jpg" class="img-fluid" alt="Team Member">
+                            <div class="team-social">
+                                <a href="#"><i class="ion-logo-twitter"></i></a>
+                                <a href="#"><i class="ion-logo-facebook"></i></a>
+                                <a href="#"><i class="ion-logo-linkedin"></i></a>
+                                <a href="#"><i class="ion-logo-instagram"></i></a>
+                            </div>
+                        </div>
+                        <div class="team-info">
+                            <h3>Ayire Salifu Abdallah</h3>
+                            <p>Chief Relationship Officer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Team End -->
+
+        <!-- Testimonials Start -->
+       <!-- <div class="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Reviews</h2>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ac lacus eget nunc imperdiet 
+                    </p>
+                </div>
+
+                <div class="owl-carousel testimonials-carousel">
+                    <div class="testimonial-item row align-items-center">
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-1.jpg" alt="Testimonial image">
+                        </div>
+                        <div class="testimonial-text">
+                            <h3>Anna M. Brzezinski</h3>
+                            <h4>businesswoman</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipiscing elit. Maecenas dictum vel
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item row align-items-center">
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-2.jpg" alt="Testimonial image">
+                        </div>
+                        <div class="testimonial-text">
+                            <h3>Shirley H. Lee</h3>
+                            <h4>businesswoman</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipiscing elit. Maecenas dictum vel
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item row align-items-center">
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-3.jpg" alt="Testimonial image">
+                        </div>
+                        <div class="testimonial-text">
+                            <h3>Kerry E. Thomas</h3>
+                            <h4>businesswoman</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipiscing elit. Maecenas dictum vel
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item row align-items-center">
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-4.jpg" alt="Testimonial image">
+                        </div>
+                        <div class="testimonial-text">
+                            <h3>Kerry E. Thomas</h3>
+                            <h4>businesswoman</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipiscing elit. Maecenas dictum vel
+                            </p>
+                        </div>
+                    </div>
+                    <div class="testimonial-item row align-items-center">
+                        <div class="testimonial-img">
+                            <img src="img/testimonial-5.jpg" alt="Testimonial image">
+                        </div>
+                        <div class="testimonial-text">
+                            <h3>Kerry E. Thomas</h3>
+                            <h4>businesswoman</h4>
+                            <p>
+                                Lorem ipsum dolor sit amet consectetur adipiscing elit. Maecenas dictum vel
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>-->
+        <!-- Testimonials End -->
+        
+        <!-- Clients Start -->
+        <div class="clients">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Clients</h2>
+                    <p>
+                        We have worked with several clients across various industries, delivering custom digital solutions 
+                        that drive growth, engagement, and productivity. Here are some of our clients and partners. 
+                    </p>
+                </div>
+
+                <div class="owl-carousel clients-carousel">
+                    <img src="img/classlink.jpg" alt="Client Logo">
+                    <img src="img/chaleride.png" alt="Client Logo">
+                    <img src="img/code_connect.png" alt="Client Logo">
+                    <img src="img/ihwan.png" alt="Client Logo">
+                    <img src="img/digital.jpg" alt="Client Logo">
+                    <img src="img/yic.jpg" alt="Client Logo">
+                    <img src="img/ferndi.jpg" alt="Client Logo">
+                    <img src="img/client-8.jpg" alt="Client Logo">
+                </div>
+
+            </div>
+        </div>
+        <!-- Clients End -->
+
+        <!-- Contact Start -->
+        <div class="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Contact Us</h2>
+                    <p>
+                        Locate  us at the address below or send us a message 
+                    </p>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form">
+                            <form class="contactForm">
+                                <div class="form-row">
+                                    <div class="form-group col-sm-6">
+                                        <input type="text" class="form-control" placeholder="Your Name" />
+                                    </div>
+                                    <div class="form-group col-sm-6">
+                                        <input type="email" class="form-control" placeholder="Your Email" />
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Subject" />
+                                </div>
+                                <div class="form-group">
+                                    <textarea class="form-control" rows="5" placeholder="Message"></textarea>
+                                </div>
+                                <div><button class="btn" type="submit">Send Message</button></div>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="map">
+                            <iframe 
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3923.011273730553!2d-0.9123403!3d10.7766573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xe2b49004615c6bb%3A0xce5e497e03a74eb4!2sTindonmolgo!5e0!3m2!1sen!2sgh!4v1710970000000!5m2!1sen!2sgh" 
+                                frameborder="0" 
+                                style="border:0; width: 100%; height: 400px;" 
+                                allowfullscreen=""
+                                loading="lazy">
+                            </iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact End -->
+
+        <!-- Footer Start -->
+        <div class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>About Us</h4>
+                            <ul>
+                                <li><i class="ion-ios-arrow-forward"></i> <a href="index.html">Home</a></li>
+                                <li><i class="ion-ios-arrow-forward"></i> <a href="about.html">About us</a></li>
+                                <li><i class="ion-ios-arrow-forward"></i> <a href="contact.html">Contact</a></li>
+                            
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-links">
+                            <h4>Useful Links</h4>
+                            <ul>
+                                <li><i class="ion-ios-arrow-forward"></i> <a href="https://www.rasheedstarlet.com/main/blog.html">blog</a></li>
+                               
+                            </ul>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-contact">
+                            <h4>Contact Us</h4>
+                            <p>
+                                Gate360<br>
+                                Bolgatanga<br>
+                                UE/R <br>
+                                <strong>Phone:</strong> +233 240527043<br>
+                                <strong>Email:</strong> codevisionlab1@gmail.com<br>
+                            </p>
+
+                            <div class="social-links">
+                                <a href="#"><i class="ion-logo-twitter"></i></a>
+                                <a href="#"><i class="ion-logo-facebook"></i></a>
+                                <a href="https://www.linkedin.com/company/codevision-lab"><i class="ion-logo-linkedin"></i></a>
+                                <a href="#"><i class="ion-logo-instagram"></i></a>
+                                <a href="#"><i class="ion-logo-googleplus"></i></a>
+                            </div>
+
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 footer-newsletter">
+                            <h4>Codevision Lab</h4>
+                            <p>
+                                We enhance the foundation of operations, systems, and product development, optimizing workflows to reduce expenses and drive expansion
+                            </p>
+                            <form action="" method="post">
+                                <input type="email" name="email"><input type="submit"  value="Subscribe">
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
             </div>
 
-    <!-- Footer -->
-    <div class="footer">
-      
-      <div class="footer_wrapper">
-        <div class="row row-col-1 row-cols-md-3 g-4">
-          <div class="col">
-            <img src="img/logo.jpg" alt="Logo image" >
-          </div>
-
-          <div class="col">
-            <h3>Company</h3>
-            <a href="index.html">About</a> <br> 
-            <a href="contact.html">Contact</a> <br>
-            <a href="partnership.html">Partnership</a> <br>
-            <a href="Hire_Graduate.html">Hire our Graduates</a> 
-          </div>
-
-          <div class="col">
-            <h3>Follow Us</h3>
-            <div class="links">
-              <a href="#">LinkedIn</a><br>
-              <a href="#">Facebook</a><br>
-              <a href="#">Twitter</a><br>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-6 copyright">
+                        Copyright &copy; 2024 <a href="">Codevision Lab</a>. All Rights Reserved
+                    </div>
+                    <div class="col-md-6 credit">
+						
+                    </div>
+                </div>
             </div>
-
-          </div>
         </div>
-          <h2>&copy 2025 CodeVision Lab. All Rights Reserved</h2>
-          <h4>Made with ❤️ by CodeVision Lab</h4>
-      </div>
-    </div>
+        <!-- Footer End -->
 
-    <!-- Bootstrap Javascript file  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <script>
-      function scrollToPrograms() {
-          var programsSection = document.getElementById("our_programs");
-          programsSection.scrollIntoView({ behavior: 'smooth' });
-      }
-  </script>
-  
-</body>
+        <a href="#" class="back-to-top"><i class="ion-ios-arrow-up"></i></a>
+
+        <!-- Libraries JS -->
+        <script src="lib/jquery/jquery.min.js"></script>
+        <script src="lib/jquery/jquery-migrate.min.js"></script>
+        <script src="lib/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/waypoints/waypoints.min.js"></script>
+        <script src="lib/counterup/counterup.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+
+        <!-- Main Javascript -->
+        <script src="js/main.js"></script>
+
+    </body>
 </html>
