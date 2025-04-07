@@ -16,6 +16,11 @@ body{
     text-align: center;
     padding: 10px;
 }
+.banner p{
+    color: #fff;
+    font-size: 18px;
+  
+}
 .banner h2{
     padding-top: 100px;
 }
@@ -159,29 +164,19 @@ body{
     }
 }
 
-.enrol-button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 10px;
-    font-size: 16px;
+.enrol-btn {
+    background-color: #007bff; /* Customize the background color */
     color: white;
-    background-color: #007bff;
+    padding: 10px 20px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     text-align: center;
-    width: 100%;
-    box-sizing: border-box;
+    font-size: 16px;
+    width: 100%; /* Makes it responsive, full width on small screens */
   }
   
-  .enrol-button:hover {
-    background-color: #0056b3;
-  }
-  
-  /* Media Queries for Responsiveness */
-  @media (min-width: 768px) {
-    .enrol-button {
-      width: auto;
-    }
+  .enrol-btn:hover {
+    background-color: #0056b3; /* Darken on hover */
   }
   
