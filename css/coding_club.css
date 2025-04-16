@@ -1,0 +1,67 @@
+
+.container-fluid{
+    margin: 0px;
+    padding: 0px;
+}
+.club_wrapper{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.club_wrapper p{
+    font-weight: 100;
+}
+.club_wrapper img{
+    width: 700px;
+    height: 500px;
+    padding-left: 30px;
+}
+.discript_text{
+    margin-top: 123px;
+    padding: 50px;
+}
+
+.code_wrapper{
+    margin-top: 50px;
+}
+
+.code_wrapper h1{
+    font-size: 30px;
+}
+.code_wrapper p{
+    font-weight: 400;
+}
+
+.code_wrapper img{
+    border-radius: 40px;
+}
+
+.col{
+    box-shadow: #f2f2f2;
+    border-width: 1px;
+}
+
+.robotic_kit img{
+    width: 200px;
+    height: 160px;
+}
+
+.code_wrapper .card-body img{
+    width: 350px;
+    height: 150px;
+}
+.code_wrapper h1{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.discript_text .card-text{
+    font-size: 30px;
+}
+
+.card-body a{
+    background-color: #f2f2f2;
+}

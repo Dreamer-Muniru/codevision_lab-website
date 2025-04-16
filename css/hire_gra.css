@@ -1,0 +1,36 @@
+
+
+.contact_container img{
+    width: 800px;
+    height: 600px;
+}
+.contact_container .col{
+    background-color: #F0F0F4;
+}
+.text_grid{
+    margin: 50px;
+}
+
+.text_grid h2{
+    font-weight: bold;
+    font-size: 40px;
+}
+.text_grid p{
+    padding-top: 50px;
+    font-weight: 400;
+}
+
+.text_grid a{
+    width: auto;
+	padding: 10px;
+	text-decoration: none;
+	border-radius: 8px;
+	background-color: #a32a40;
+	color: #fff;
+	font-size: 18px;
+}
+
+.hire_grad h2, h4{
+    text-align: center;
+    margin-top: 50px;
+}
