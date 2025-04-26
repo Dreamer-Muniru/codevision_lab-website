@@ -165,9 +165,10 @@ body{
 }
 
 .enrol-btn {
-    background-color: #007bff; /* Customize the background color */
+    background-color: #87152a; /* Customize the background color */
     color: white;
     padding: 10px 20px;
+    font-weight: bold;
     border: none;
     border-radius: 5px;
     cursor: pointer;
