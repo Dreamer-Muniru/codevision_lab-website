@@ -165,7 +165,7 @@ body{
 }
 
 .enrol-btn {
-    background-color: #87152a; /* Customize the background color */
+    background-color: #87152a; 
     color: white;
     padding: 10px 20px;
     font-weight: bold;
@@ -174,10 +174,10 @@ body{
     cursor: pointer;
     text-align: center;
     font-size: 16px;
-    width: 100%; /* Makes it responsive, full width on small screens */
+    width: 100%; 
   }
   
   .enrol-btn:hover {
-    background-color:rgb(159, 3, 159); /* Darken on hover */
+    background-color:rgb(159, 3, 159); 
   }
   
