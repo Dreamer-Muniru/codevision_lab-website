@@ -1,167 +1,611 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CodeVision Lab</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/coding_club.css">
+    <title>Coding Club - CodeVision Lab | Inspiring Future Developers</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Join CodeVision Lab's Coding Club and inspire the next generation of coders. Learn Python, AI, robotics, and participate in coding competitions in Ghana.">
+    <meta name="keywords" content="coding club, kids coding, programming for children, STEM education, AI for students, robotics, Ghana, youth programming">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/coding_club.css">
 </head>
 <body>
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-              <img src="img/logo.jpg">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <!-- <li class="nav-item ">
-                    <button class="nav-link" id="pills-our_programs-tab" onclick="scrollToPrograms()" data-bs-toggle="pill" data-bs-target="#pills-our_programs" type="button" role="tab" aria-controls="pills-our_programs" aria-selected="false">Our Programs</button>
-                  </li> -->
-                  <li class="nav-item dropdown" id="pills-our_programs-tab" type="button" role="tab" aria-controls="pills-our_programs" aria-selected="false" >
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Our Programs
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="codingClub.html">Coding Club</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="Hire_Graduate.html">Hire our Graduate</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="partnership.html">Partnership</a>
-                </li>
-          
-                  <li class="nav-item">
-                      <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-              </ul>
-          </div>
-      </div>
-  </nav>
-    <!-- End of Header -->
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center">
+                <i class="fas fa-code me-2"></i>
+                <span>🚀 Join our Coding Club - Building Future Tech Leaders!</span>
+                <a href="contact.html" class="ms-3 banner-cta">Register Now <i class="fas fa-arrow-right ms-1"></i></a>
+            </div>
+        </div>
+    </div>
 
-    <!-- Contect Us -->
-    <div class="container-fluid">
-       <div class="club_wrapper">
-        <div class="img_col">
-          <img src="img/Kids-Coding-1.jpg">
-        </div>  
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.jpg" alt="CodeVision Lab Logo" class="logo">
+                <span class="brand-text">CodeVision Lab</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown">
+                            Programs
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item active" href="codingClub.html"><i class="fas fa-code me-2"></i>Coding Club</a></li>
+                            <li><a class="dropdown-item" href="Hire_Graduate.html"><i class="fas fa-briefcase me-2"></i>Hire our Graduates</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="partnership.html">Partnership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="admission.html" class="btn btn-primary nav-cta">Enroll Now</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-        <div class="discript_text">
-          <h2>Learn | Create | Innovate</h2>
-          <p class="card-text">
-            Training the future workforce inemerging technologies
-            <br>
-            Creating pipelines and pathways for learners at every stage: K-16, educators, and the workforce.
-          </p>
+    <!-- Hero Section -->
+    <section class="club-hero-section">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
         </div>
         
-      </div>
-      <div class="container code_wrapper">
-        <h1>Inspiring the Next Generation of Coders </h1>
-        <p>
-          We're reimagining STEM education and workforce development to empower every student with the technical 
-          skills necessary for the jobs of the future.
-       <br>
-        We focus on skill building and workforce development in technologies that are going to change the world over the 
-          next decade, such as Quantum Computing, Artificial Intelligence, and Big Data. With a commitment to accessible,
-           supportive computer science education, we offer learning pathways and programs for individuals at every stage 
-           of their STEM journey, including: K-12 students and educators, community college and university
-            students and faculty, and members of the workforce.</p>
-            <h1>Key Initiatives</h1>
-        <div class="row">
-          <div class="col-sm-4 mb-3 mb-sm-0">
-            <div class="card">
-              <div class="card-body">
-                <img src="img/code_connect.png">
-                <h5 class="card-title">Classical Coding</h5>
-                <p class="card-text">codeConnect empowers students through STEM pathways from building foundational Python
-                   skills to developing emerging technologies skills to conducting research in the field.
-                  </p>
-                <a href="#" class="btn btn-primary">Read More</a>
-              </div>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <i class="fas fa-users me-2"></i>
+                            Coding Club Program
+                        </div>
+                        <h1 class="hero-title">
+                            <span class="gradient-text">Learn</span> | 
+                            <span class="gradient-text">Create</span> | 
+                            <span class="gradient-text">Innovate</span>
+                        </h1>
+                        <p class="hero-description">
+                            Training the future workforce in emerging technologies. Creating pipelines and pathways 
+                            for learners at every stage: K-16, educators, and the workforce.
+                        </p>
+                        
+                        <div class="hero-actions">
+                            <a href="contact.html" class="btn btn-primary btn-lg hero-btn">
+                                Join Our Club
+                                <i class="fas fa-rocket ms-2"></i>
+                            </a>
+                            <a href="#programs" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-play me-2"></i>
+                                View Programs
+                            </a>
+                        </div>
+                        
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">200+</div>
+                                <div class="stat-label">Young Coders</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">50+</div>
+                                <div class="stat-label">Projects Built</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">15+</div>
+                                <div class="stat-label">Schools</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <img src="img/Kids-Coding-1.jpg" alt="Kids Coding" class="main-image">
+                            <div class="floating-card card-1">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                            <div class="floating-card card-2">
+                                <i class="fas fa-robot"></i>
+                                <span>Robotics</span>
+                            </div>
+                            <div class="floating-card card-3">
+                                <i class="fas fa-brain"></i>
+                                <span>AI/ML</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="col-sm-4 mb-3 mb-sm-0">
-            <div class="card">
-              <div class="card-body">
-                <img src="img/coding.webp">
-                <h5 class="card-title">Coding Competition</h5>
-                <p class="card-text">Host annual coding and robotics competition for our partner schools.</p>
-                <a href="#" class="btn btn-primary">Read More</a>
-              </div>
-            </div>
-          </div>
+        </div>
+    </section>
 
-          <div class="col-sm-4">
-            <div class="card">
-              <div class="card-body">
-                <img src="img/train.png">
-                <h5 class="card-title">Artificial Intelligence</h5>
-                <p class="card-text">
-                  TRAIN is creating future Responsible AI leaders through first-of-its-kind course: Introduction 
-                  to Machine Learning (ML) for High School Students and Educators & College Faculty.
+    <!-- About Section -->
+    <section class="about-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <div class="section-badge">
+                    <i class="fas fa-lightbulb me-2"></i>
+                    Our Mission
+                </div>
+                <h2 class="section-title">Inspiring the Next Generation of Coders</h2>
+                <p class="section-description">
+                    We're reimagining STEM education and workforce development to empower every student with the 
+                    technical skills necessary for the jobs of the future.
                 </p>
-                <a href="#" class="btn btn-primary">Read More</a>
-              </div>
             </div>
-          </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto" data-aos="fade-up" data-aos-delay="200">
+                    <div class="about-content">
+                        <p>
+                            We focus on skill building and workforce development in technologies that are going to 
+                            change the world over the next decade, such as <strong>Quantum Computing</strong>, 
+                            <strong>Artificial Intelligence</strong>, and <strong>Big Data</strong>.
+                        </p>
+                        <p>
+                            With a commitment to accessible, supportive computer science education, we offer learning 
+                            pathways and programs for individuals at every stage of their STEM journey, including:
+                        </p>
+                        <div class="pathway-list">
+                            <div class="pathway-item">
+                                <i class="fas fa-graduation-cap"></i>
+                                <span>K-12 students and educators</span>
+                            </div>
+                            <div class="pathway-item">
+                                <i class="fas fa-university"></i>
+                                <span>Community college and university students and faculty</span>
+                            </div>
+                            <div class="pathway-item">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Members of the workforce</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-         
-      </div>
-      
-    </div>
-    <!-- End of Contact -->
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="programs-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <div class="section-badge">
+                    <i class="fas fa-rocket me-2"></i>
+                    Key Initiatives
+                </div>
+                <h2 class="section-title">Our Program Offerings</h2>
+                <p class="section-description">
+                    Comprehensive programs designed to build foundational skills and develop emerging technology expertise
+                </p>
+            </div>
+            
+            <div class="row g-4 mt-5">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="program-card">
+                        <div class="program-image">
+                            <img src="img/code_connect.png" alt="Classical Coding">
+                            <div class="program-overlay">
+                                <div class="program-icon">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="program-content">
+                            <div class="program-category">
+                                <i class="fas fa-laptop-code me-2"></i>
+                                Foundation Program
+                            </div>
+                            <h3 class="program-title">Classical Coding</h3>
+                            <p class="program-description">
+                                codeConnect empowers students through STEM pathways from building foundational Python 
+                                skills to developing emerging technologies skills to conducting research in the field.
+                            </p>
+                            <div class="program-features">
+                                <div class="feature">
+                                    <i class="fas fa-check me-2"></i>
+                                    Python Fundamentals
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check me-2"></i>
+                                    Problem Solving
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check me-2"></i>
+                                    Project-Based Learning
+                                </div>
+                            </div>
+                            <div class="program-footer">
+                                <div class="program-duration">
+                                    <i class="fas fa-clock me-2"></i>
+                                    8 Weeks
+                                </div>
+                                <a href="contact.html" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="program-card featured">
+                        <div class="popular-badge">Most Popular</div>
+                        <div class="program-image">
+                            <img src="img/coding.webp" alt="Coding Competition">
+                            <div class="program-overlay">
+                                <div class="program-icon">
+                                    <i class="fas fa-trophy"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="program-content">
+                            <div class="program-category">
+                                <i class="fas fa-medal me-2"></i>
+                                Competition Program
+                            </div>
+                            <h3 class="program-title">Coding Competition</h3>
+                            <p class="program-description">
+                                Join our annual coding and robotics competition for partner schools. Showcase your 
+                                skills, win prizes, and connect with fellow young developers.
+                            </p>
+                            <div class="program-features">
+                                <div class="feature">
+                                    <i class="fas fa-check me-2"></i>
+                                    Annual Competition
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check me-2"></i>
+                                    Team Challenges
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check me-2"></i>
+                                    Awards & Recognition
+                                </div>
+                            </div>
+                            <div class="program-footer">
+                                <div class="program-duration">
+                                    <i class="fas fa-calendar me-2"></i>
+                                    Annual Event
+                                </div>
+                                <a href="contact.html" class="btn btn-primary">Register Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="program-card">
+                        <div class="program-image">
+                            <img src="img/train.png" alt="Artificial Intelligence">
+                            <div class="program-overlay">
+                                <div class="program-icon">
+                                    <i class="fas fa-brain"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="program-content">
+                            <div class="program-category">
+                                <i class="fas fa-robot me-2"></i>
+                                Advanced Program
+                            </div>
+                            <h3 class="program-title">Artificial Intelligence</h3>
+                            <p class="program-description">
+                                TRAIN is creating future Responsible AI leaders through our first-of-its-kind course: 
+                                Introduction to Machine Learning for High School Students and Educators.
+                            </p>
+                            <div class="program-features">
+                                <div class="feature">
+                                    <i class="fas fa-check me-2"></i>
+                                    Machine Learning Basics
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check me-2"></i>
+                                    Responsible AI Ethics
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check me-2"></i>
+                                    Hands-on Projects
+                                </div>
+                            </div>
+                            <div class="program-footer">
+                                <div class="program-duration">
+                                    <i class="fas fa-clock me-2"></i>
+                                    12 Weeks
+                                </div>
+                                <a href="contact.html" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Age Groups Section -->
+    <section class="age-groups-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <div class="section-badge">
+                    <i class="fas fa-users me-2"></i>
+                    Age Groups
+                </div>
+                <h2 class="section-title">Programs for Every Age</h2>
+                <p class="section-description">
+                    From young beginners to advanced learners, we have programs tailored for different age groups
+                </p>
+            </div>
+            
+            <div class="row g-4 mt-5">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="age-group-card">
+                        <div class="age-icon">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <h4>Ages 6-9</h4>
+                        <h5>Code Explorers</h5>
+                        <p>Visual programming with Scratch, basic computer skills, and creative digital storytelling.</p>
+                        <ul>
+                            <li>Scratch Programming</li>
+                            <li>Digital Art</li>
+                            <li>Basic Logic</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="age-group-card">
+                        <div class="age-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h4>Ages 10-13</h4>
+                        <h5>Code Builders</h5>
+                        <p>Introduction to Python, web development basics, and simple robotics projects.</p>
+                        <ul>
+                            <li>Python Basics</li>
+                            <li>HTML/CSS</li>
+                            <li>Robotics Kits</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="age-group-card">
+                        <div class="age-icon">
+                            <i class="fas fa-user-tie"></i>
+                        </div>
+                        <h4>Ages 14-17</h4>
+                        <h5>Code Masters</h5>
+                        <p>Advanced programming, mobile app development, and AI/ML fundamentals.</p>
+                        <ul>
+                            <li>Advanced Python</li>
+                            <li>Mobile Apps</li>
+                            <li>Machine Learning</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="age-group-card">
+                        <div class="age-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h4>Educators</h4>
+                        <h5>Teacher Training</h5>
+                        <p>Professional development for educators to integrate coding into their curriculum.</p>
+                        <ul>
+                            <li>Curriculum Design</li>
+                            <li>Teaching Methods</li>
+                            <li>Assessment Tools</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content text-center" data-aos="fade-up">
+                <h2>Ready to Start Your Child's Coding Journey?</h2>
+                <p>Join hundreds of young coders who are building the future with CodeVision Lab</p>
+                <div class="cta-buttons">
+                    <a href="contact.html" class="btn btn-primary btn-lg">
+                        Register for Coding Club
+                        <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                    <a href="index.html" class="btn btn-outline-light btn-lg">
+                        Explore All Programs
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <img src="img/logo.jpg" alt="CodeVision Lab Logo" class="footer-logo">
+                        <h4>CodeVision Lab</h4>
+                        <p>Inspiring the next generation of coders through innovative STEM education programs.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5>Company</h5>
+                        <ul>
+                            <li><a href="index.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="partnership.html">Partnership</a></li>
+                            <li><a href="Hire_Graduate.html">Hire Graduates</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5>Programs</h5>
+                        <ul>
+                            <li><a href="codingClub.html">Coding Club</a></li>
+                            <li><a href="admission.html">Web Design</a></li>
+                            <li><a href="admission.html">Full Stack</a></li>
+                            <li><a href="admission.html">Mobile Dev</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-contact">
+                        <h5>Get in Touch</h5>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope me-3"></i>
+                            <span>club@codevisionlab.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone me-3"></i>
+                            <span>+233 XX XXX XXXX</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt me-3"></i>
+                            <span>Accra, Ghana</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>&copy; 2025 CodeVision Lab. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>Made with <i class="fas fa-heart text-danger"></i> by CodeVision Lab</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     
-
-     <!-- Footer -->
-   <div class="footer">
-    <div class="footer_wrapper">
-      <div class="row row-col-1 row-cols-md-3 g-4">
-        <div class="col">
-          <img src="img/logo.jpg" alt="Logo image" >
-        </div>
-        <div class="col">
-          <h3>Company</h3>
-          <a href="index.html">About</a> <br> 
-          <a href="contact.html">Contact</a> <br>
-          <a href="partnership.html">Partnership</a> <br>
-        </div>
-        <div class="col">
-          <h3>Follow Us</h3>
-          <div class="links">
-            <a href="#">LinkedIn</a><br>
-            <a href="#">Facebook</a><br>
-            <a href="#">Twitter</a><br>
-          </div>
-        </div>
-      </div>
-        <h2>&copy 2025 CodeVision Lab. All Rights Reserved</h2>
-        <h4>Made with ❤️ by CodeVision Lab</h4>
-    </div>
-  </div>
-
-
-
-
-    <!-- Bootstrap Javascript file  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
     <script>
-      function scrollToPrograms() {
-          var programsSection = document.getElementById("our_programs");
-          programsSection.scrollIntoView({ behavior: 'smooth' });
-      }
-  </script>
-  
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('mainNavbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animate numbers in hero stats
+        function animateNumbers() {
+            const stats = document.querySelectorAll('.stat-number');
+            stats.forEach(stat => {
+                const target = parseInt(stat.innerText);
+                const increment = target / 100;
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    stat.innerText = Math.floor(current) + '+';
+                }, 20);
+            });
+        }
+
+        // Trigger number animation when hero section is visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateNumbers();
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        const heroStats = document.querySelector('.hero-stats');
+        if (heroStats) {
+            observer.observe(heroStats);
+        }
+    </script>
 </body>
 </html>
