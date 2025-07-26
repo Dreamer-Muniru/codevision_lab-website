@@ -1,174 +1,856 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CodeVision Lab</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>Admissions - CodeVision Lab | Start Your Tech Journey Today</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Apply to CodeVision Lab's tech education programs. Web development, mobile app development, and coding bootcamps. Flexible payment plans and scholarship opportunities available.">
+    <meta name="keywords" content="tech education admissions, coding bootcamp Ghana, web development course, mobile app development, programming courses admission, CodeVision Lab application">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/index.css">
-    <link rel="stylesheet" type="text/css" href="css/admission.css"
+    <link rel="stylesheet" type="text/css" href="css/admission.css">
 </head>
 <body>
-  <div class="application_status">
-    <h2>Admission is in progress, join the August, 2025 Cohort </h2>
-  </div>
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-              <img src="img/logo.jpg">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <!-- <li class="nav-item ">
-                    <button class="nav-link" id="pills-our_programs-tab" onclick="scrollToPrograms()" data-bs-toggle="pill" data-bs-target="#pills-our_programs" type="button" role="tab" aria-controls="pills-our_programs" aria-selected="false">Our Programs</button>
-                  </li> -->
-                  <li class="nav-item dropdown" id="pills-our_programs-tab" type="button" role="tab" aria-controls="pills-our_programs" >
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Our Programs
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="codingClub.html">Coding Club</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="Hire_Graduate.html">Hire our Graduate</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="partnership.html">Partnership</a>
-                  </li>
-                  <li class="nav-item">
-                      <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-                 
-              </ul>
-          </div>
-      </div>
-  </nav>
-    <!-- End of Header -->
-
-<!-- Banner -->
- <div class="banner">
-    <h2>Discover the perfect payment plan <br> <span> to match your budget </span> </h2>
-    <p>Pay monthly, enjoy discounts by paying upfront.</p>
- </div>
-
- <div class="course_selection">
-    <h1>Course Selection</h1>
-    <div class="row">
-      <div class="col">
-        <div class="card">
-          <h2>Fundamental of Web Design</h2>
-          <h4>Duration: 7-weeks</h4>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center">
+                <i class="fas fa-graduation-cap me-2"></i>
+                <span>🎓 July 2025 Cohort - Early Bird Applications Now Open!</span>
+                <a href="#application-form" class="ms-3 banner-cta">Apply Now <i class="fas fa-arrow-right ms-1"></i></a>
+            </div>
         </div>
-        <div class="card-body">
-          <p>
-            This 7-week course includes 4 weeks of intensive, hands-on coding lessons and 3 weeks 
-            of online mentorship and job assistance. By the end of the program, you'll transform from
-             a novice into a confident, entry-level Web Designer.
-          </p>
-          <span>Our 7 weeks education-to-internship program is priced at GHC1,100</span>
-         
-          
-        </div>
-        <button class="enrol-btn" onclick="window.location.href='https://tally.so/r/3yo2px'">Enrol Now</button>
-      </div>
+    </div>
 
-      <div class="col">
-        <div class="card">
-          <h2>Full Stack Web Development</h2>
-          <h4>Duration: 3-months</h4>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.jpg" alt="CodeVision Lab Logo" class="logo">
+                <span class="brand-text">CodeVision Lab</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Programs
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="codingClub.html"><i class="fas fa-code me-2"></i>Coding Club</a></li>
+                            <li><a class="dropdown-item" href="Hire_Graduate.html"><i class="fas fa-briefcase me-2"></i>Hire our Graduates</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="partnership.html">Partnership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#application-form" class="btn btn-primary nav-cta">Apply Now</a>
+                    </li>
+                </ul>
+            </div>
         </div>
-        <div class="card-body">
-          <p>This programme is open to individuals within the ages of 16 years and above. <br>
-            The cost of our 3 Months comprehensive course in Full Stack Software Development using
-            Html, CSS, Tailwincss, Javascript, React, Node.js and Express.js.  
-            <br> 
-          </p>
-          <span>Our 3 month education-to-internship program is priced at GHC3,500</span>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="admission-hero-section">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
         </div>
         
-        <button class="enrol-btn" onclick="window.location.href='https://tally.so/r/3yo2px'">Enrol Now</button>
-      </div>
-
-      <div class="col">
-        <div class="card">
-          <h2>Mobile App Development</h2>
-          <h4>Duration: 3-months</h4>
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <i class="fas fa-rocket me-2"></i>
+                            Start Your Journey
+                        </div>
+                        <h1 class="hero-title">
+                            Transform Your Future with 
+                            <span class="gradient-text">Tech Education</span>
+                        </h1>
+                        <p class="hero-description">
+                            Join thousands of successful graduates who've launched their tech careers with 
+                            CodeVision Lab. Choose from our comprehensive programs designed to take you 
+                            from beginner to job-ready professional.
+                        </p>
+                        
+                        <div class="hero-actions">
+                            <a href="#programs" class="btn btn-primary btn-lg hero-btn">
+                                Explore Programs
+                                <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                            <a href="#requirements" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-list-check me-2"></i>
+                                View Requirements
+                            </a>
+                        </div>
+                        
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">3</div>
+                                <div class="stat-label">Program Options</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">95%</div>
+                                <div class="stat-label">Job Placement Rate</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">1000+</div>
+                                <div class="stat-label">Alumni Network</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <img src="img/Students-image.jpg" alt="Students Learning" class="main-image">
+                            <div class="floating-card card-1">
+                                <i class="fas fa-code"></i>
+                                <span>Web Dev</span>
+                            </div>
+                            <div class="floating-card card-2">
+                                <i class="fas fa-mobile-alt"></i>
+                                <span>Mobile Apps</span>
+                            </div>
+                            <div class="floating-card card-3">
+                                <i class="fas fa-palette"></i>
+                                <span>UI/UX Design</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="card-body">
-          <p>This programme is open to individuals within the ages of 16 years and above. <br>
-            You don’t need any prior experience in technology to begin your journey with us
-            You will learn to build Websites from scratch using React-Native, Expo, Tailwincss and material UI.
-          </p>
-          <span>Our 2 month education-to-internship program is priced at GHC3,000</span>
-        </div>
-        <button class="enrol-btn" onclick="window.location.href='https://tally.so/r/3yo2px'">Enrol Now</button>
-      </div>
-    </div>
- </div>
+    </section>
 
+    <!-- Programs Section -->
+    <section id="programs" class="programs-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <div class="section-badge">
+                    <i class="fas fa-laptop-code me-2"></i>
+                    Choose Your Path
+                </div>
+                <h2 class="section-title">Comprehensive Tech Programs</h2>
+                <p class="section-description">
+                    Flexible learning options designed to fit your schedule and career goals
+                </p>
+            </div>
+            
+            <div class="row g-4 mt-5">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="program-card">
+                        <div class="program-header">
+                            <div class="program-icon">
+                                <i class="fas fa-paintbrush"></i>
+                            </div>
+                            <div class="program-badge beginner">Beginner Friendly</div>
+                        </div>
+                        <div class="program-content">
+                            <h3>Web Design Fundamentals</h3>
+                            <div class="program-duration">
+                                <i class="fas fa-clock me-2"></i>
+                                7 Weeks
+                            </div>
+                            <p class="program-description">
+                                Master the foundations of web design with HTML, CSS, and responsive design principles. 
+                                Perfect for beginners entering the tech industry.
+                            </p>
+                            <div class="program-features">
+                                <div class="feature">
+                                    <i class="fas fa-check me-2"></i>
+                                    4 weeks intensive coding
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check me-2"></i>
+                                    3 weeks mentorship
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check me-2"></i>
+                                    Portfolio development
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check me-2"></i>
+                                    Job placement assistance
+                                </div>
+                            </div>
+                            <div class="program-pricing">
+                                <div class="price">
+                                    <span class="currency">GHC</span>
+                                    <span class="amount">1,100</span>
+                                </div>
+                                <div class="payment-options">
+                                    <span>Monthly payment available</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="program-footer">
+                            <a href="#application-form" class="btn btn-primary">Apply Now</a>
+                            <a href="#program-details" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="program-card featured">
+                        <div class="program-header">
+                            <div class="program-icon">
+                                <i class="fas fa-layer-group"></i>
+                            </div>
+                            <div class="program-badge popular">Most Popular</div>
+                        </div>
+                        <div class="program-content">
+                            <h3>Full Stack Development</h3>
+                            <div class="program-duration">
+                                <i class="fas fa-clock me-2"></i>
+                                3 Months
+                            </div>
+                            <p class="program-description">
+                                Comprehensive full-stack development covering frontend and backend technologies. 
+                                Build complete web applications from scratch.
+                            </p>
+                            <div class="program-features">
+                                <div class="feature">
+                                    <i class="fas fa-check me-2"></i>
+                                    HTML, CSS, JavaScript
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check me-2"></i>
+                                    React & Node.js
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check me-2"></i>
+                                    Database management
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check me-2"></i>
+                                    Real-world projects
+                                </div>
+                            </div>
+                            <div class="program-pricing">
+                                <div class="price">
+                                    <span class="currency">GHC</span>
+                                    <span class="amount">3,500</span>
+                                </div>
+                                <div class="payment-options">
+                                    <span>Early bird discount available</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="program-footer">
+                            <a href="#application-form" class="btn btn-primary">Apply Now</a>
+                            <a href="#program-details" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="program-card">
+                        <div class="program-header">
+                            <div class="program-icon">
+                                <i class="fas fa-mobile-alt"></i>
+                            </div>
+                            <div class="program-badge trending">Trending</div>
+                        </div>
+                        <div class="program-content">
+                            <h3>Mobile App Development</h3>
+                            <div class="program-duration">
+                                <i class="fas fa-clock me-2"></i>
+                                3 Months
+                            </div>
+                            <p class="program-description">
+                                Create mobile applications for iOS and Android using React Native and Expo. 
+                                No prior experience required.
+                            </p>
+                            <div class="program-features">
+                                <div class="feature">
+                                    <i class="fas fa-check me-2"></i>
+                                    React Native & Expo
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check me-2"></i>
+                                    Cross-platform development
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check me-2"></i>
+                                    UI/UX design principles
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-check me-2"></i>
+                                    App store deployment
+                                </div>
+                            </div>
+                            <div class="program-pricing">
+                                <div class="price">
+                                    <span class="currency">GHC</span>
+                                    <span class="amount">3,000</span>
+                                </div>
+                                <div class="payment-options">
+                                    <span>Scholarship opportunities</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="program-footer">
+                            <a href="#application-form" class="btn btn-primary">Apply Now</a>
+                            <a href="#program-details" class="btn btn-outline-primary">Learn More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Admission Requirements Section -->
+    <section id="requirements" class="requirements-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="requirements-content">
+                        <div class="section-badge">
+                            <i class="fas fa-clipboard-list me-2"></i>
+                            Admission Requirements
+                        </div>
+                        <h2 class="section-title">Ready to Get Started?</h2>
+                        <p class="section-description">
+                            Our programs are designed to be accessible to motivated learners from all backgrounds. 
+                            Here's what you need to begin your tech journey.
+                        </p>
+                        
+                        <div class="requirements-list">
+                            <div class="requirement-item">
+                                <div class="req-icon">
+                                    <i class="fas fa-user-graduate"></i>
+                                </div>
+                                <div class="req-content">
+                                    <h4>Age Requirement</h4>
+                                    <p>Must be 16 years or older</p>
+                                </div>
+                            </div>
+                            
+                            <div class="requirement-item">
+                                <div class="req-icon">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="req-content">
+                                    <h4>Educational Background</h4>
+                                    <p>Minimum high school completion or equivalent</p>
+                                </div>
+                            </div>
+                            
+                            <div class="requirement-item">
+                                <div class="req-icon">
+                                    <i class="fas fa-laptop"></i>
+                                </div>
+                                <div class="req-content">
+                                    <h4>Technology Access</h4>
+                                    <p>Reliable computer and internet connection</p>
+                                </div>
+                            </div>
+                            
+                            <div class="requirement-item">
+                                <div class="req-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="req-content">
+                                    <h4>Motivation</h4>
+                                    <p>Passion for learning and technology</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="admission-process">
+                        <h3>Application Process</h3>
+                        <div class="process-steps">
+                            <div class="step-item">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h5>Submit Application</h5>
+                                    <p>Complete our online application form with your personal details and program choice</p>
+                                </div>
+                            </div>
+                            
+                            <div class="step-item">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h5>Assessment Interview</h5>
+                                    <p>Brief interview to understand your goals and ensure program fit</p>
+                                </div>
+                            </div>
+                            
+                            <div class="step-item">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h5>Payment & Enrollment</h5>
+                                    <p>Secure your spot with payment and receive welcome materials</p>
+                                </div>
+                            </div>
+                            
+                            <div class="step-item">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h5>Start Learning</h5>
+                                    <p>Begin your transformative tech education journey</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Payment Options Section -->
+    <section class="payment-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <div class="section-badge">
+                    <i class="fas fa-credit-card me-2"></i>
+                    Flexible Payment Options
+                </div>
+                <h2 class="section-title">Choose a Payment Plan That Works for You</h2>
+                <p class="section-description">
+                    We believe cost shouldn't be a barrier to quality tech education
+                </p>
+            </div>
+            
+            <div class="row g-4 mt-5 justify-content-center">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="payment-card">
+                        <div class="payment-icon">
+                            <i class="fas fa-money-bill-wave"></i>
+                        </div>
+                        <h4>Full Payment</h4>
+                        <p>Pay the full program fee upfront and enjoy early bird discounts</p>
+                        <div class="payment-benefits">
+                            <div class="benefit">
+                                <i class="fas fa-check me-2"></i>
+                                <span>10% early bird discount</span>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-check me-2"></i>
+                                <span>Immediate enrollment</span>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-check me-2"></i>
+                                <span>No monthly fees</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="payment-card featured">
+                        <div class="payment-badge">Most Popular</div>
+                        <div class="payment-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h4>Monthly Installments</h4>
+                        <p>Split your payment into manageable monthly installments</p>
+                        <div class="payment-benefits">
+                            <div class="benefit">
+                                <i class="fas fa-check me-2"></i>
+                                <span>Flexible monthly payments</span>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-check me-2"></i>
+                                <span>No interest charges</span>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-check me-2"></i>
+                                <span>Budget-friendly option</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="payment-card">
+                        <div class="payment-icon">
+                            <i class="fas fa-scholarship"></i>
+                        </div>
+                        <h4>Scholarship Program</h4>
+                        <p>Apply for need-based or merit-based scholarships</p>
+                        <div class="payment-benefits">
+                            <div class="benefit">
+                                <i class="fas fa-check me-2"></i>
+                                <span>Up to 50% coverage</span>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-check me-2"></i>
+                                <span>Merit & need-based</span>
+                            </div>
+                            <div class="benefit">
+                                <i class="fas fa-check me-2"></i>
+                                <span>Application support</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="success-stories-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <div class="section-badge">
+                    <i class="fas fa-star me-2"></i>
+                    Success Stories
+                </div>
+                <h2 class="section-title">Our Alumni Success</h2>
+                <p class="section-description">
+                    Hear from graduates who've transformed their careers through our programs
+                </p>
+            </div>
+            
+            <div class="row g-4 mt-5">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="story-card">
+                        <div class="student-avatar">
+                            <img src="img/success_1.jpg" alt="Alumni" class="img-fluid">
+                        </div>
+                        <div class="story-content">
+                            <div class="quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>"CodeVision Lab changed my life completely. From knowing nothing about coding to landing my dream job as a frontend developer."</p>
+                            </div>
+                            <div class="student-info">
+                                <h5>Abubakari Saddiq</h5>
+                                <span class="position">Frontend Developer at TechCorp</span>
+                                <span class="program">Full Stack Development Graduate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="story-card">
+                        <div class="student-avatar">
+                            <img src="img/success_2.jpg" alt="Alumni" class="img-fluid">
+                        </div>
+                        <div class="story-content">
+                            <div class="quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>"The mobile app development program gave me the skills to create my own startup. Now I'm building apps for clients worldwide."</p>
+                            </div>
+                            <div class="student-info">
+                                <h5>Fatima Abdul</h5>
+                                <span class="position">Mobile App Developer & Entrepreneur</span>
+                                <span class="program">Mobile Development Graduate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="story-card">
+                        <div class="student-avatar">
+                            <img src="img/success_3.jpg" alt="Alumni" class="img-fluid">
+                        </div>
+                        <div class="story-content">
+                            <div class="quote">
+                                <i class="fas fa-quote-left"></i>
+                                <p>"The mentorship and career support were incredible. I got my first tech job even before graduating!"</p>
+                            </div>
+                            <div class="student-info">
+                                <h5>Emmanuel Osei</h5>
+                                <span class="position">UI/UX Designer at StartupHub</span>
+                                <span class="program">Web Design Graduate</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Application Form Section -->
+    <section id="application-form" class="application-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="application-content">
+                        <h2>Ready to Start Your Tech Journey?</h2>
+                        <p>
+                            Take the first step towards your new career. Our admissions team is here 
+                            to guide you through every step of the process.
+                        </p>
+                        <div class="application-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Free consultation with our advisors</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Personalized program recommendations</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Scholarship eligibility assessment</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Fast-track application process</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-info">
+                            <h5>Need Help?</h5>
+                            <div class="contact-item">
+                                <i class="fas fa-phone me-2"></i>
+                                <span>+233 240 527 043</span>
+                            </div>
+                            <div class="contact-item">
+                                <i class="fas fa-envelope me-2"></i>
+                                <span>admissions@codevisionlab.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="application-form-card">
+                        <h3>Start Your Application</h3>
+                        <p>Begin your journey with our simple application process</p>
+                        
+                        <div class="application-buttons">
+                            <a href="https://tally.so/r/3yo2px" target="_blank" class="btn btn-primary btn-lg">
+                                <i class="fas fa-external-link-alt me-2"></i>
+                                Complete Application
+                            </a>
+                            <div class="form-info">
+                                <small class="text-muted">
+                                    <i class="fas fa-clock me-1"></i>
+                                    Takes only 5-10 minutes
+                                </small>
+                            </div>
+                        </div>
+                        
+                        <div class="quick-actions">
+                            <h6>Quick Actions</h6>
+                            <div class="action-buttons">
+                                <a href="contact.html" class="btn btn-outline-primary">
+                                    <i class="fas fa-calendar-alt me-2"></i>
+                                    Schedule Consultation
+                                </a>
+                                <a href="#programs" class="btn btn-outline-primary">
+                                    <i class="fas fa-download me-2"></i>
+                                    Download Brochure
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <img src="img/logo.jpg" alt="CodeVision Lab Logo" class="footer-logo">
+                        <h4>CodeVision Lab</h4>
+                        <p>Transforming lives through innovative tech education and comprehensive career support programs.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5>Programs</h5>
+                        <ul>
+                            <li><a href="#programs">Web Design</a></li>
+                            <li><a href="#programs">Full Stack Development</a></li>
+                            <li><a href="#programs">Mobile App Development</a></li>
+                            <li><a href="codingClub.html">Coding Club</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5>Admissions</h5>
+                        <ul>
+                            <li><a href="#requirements">Requirements</a></li>
+                            <li><a href="#application-form">Apply Now</a></li>
+                            <li><a href="#payment-section">Payment Options</a></li>
+                            <li><a href="contact.html">Scholarships</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-contact">
+                        <h5>Admissions Office</h5>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope me-3"></i>
+                            <span>admissions@codevisionlab.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone me-3"></i>
+                            <span>+233 240 527 043</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt me-3"></i>
+                            <span>C/O Gate360, Garu UE/R, Ghana</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>&copy; 2025 CodeVision Lab. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>Building Tomorrow's Tech Leaders <i class="fas fa-heart text-danger"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
     
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
+    <script>
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
 
-  
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('mainNavbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
 
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
 
-<!-- Mission and Vision Section -->
-    <h1 class="intro_heading">Our Mission</h1>
-    <div class="mission_container">
-      <div class="img_icon">
-        <img src="img/mission.png" class="card-img-top" alt="icon">
-      </div>
-      <div class="text_content">
-        <p class="card-text">
-          CodeVision's mission is to bridge the digital divide in Ghana by providing practical
-          technology education to students, enabling them to develop real-world
-          applications and products. Our organization is committed to equipping students
-          with modern technological advancements, fostering innovation, and preparing
-          them for the challenges of the digital era.
-        </p>
-      </div>
-    </div>
-<!-- End of mission -->
+        // Animate numbers in stats
+        function animateNumbers() {
+            const stats = document.querySelectorAll('.stat-number');
+            stats.forEach(stat => {
+                const target = stat.innerText.replace(/[^\d]/g, '');
+                const targetNum = parseInt(target);
+                const increment = targetNum / 50;
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= targetNum) {
+                        current = targetNum;
+                        clearInterval(timer);
+                    }
+                    
+                    if (stat.innerText.includes('%')) {
+                        stat.innerText = Math.floor(current) + '%';
+                    } else if (stat.innerText.includes('+')) {
+                        stat.innerText = Math.floor(current) + '+';
+                    } else {
+                        stat.innerText = Math.floor(current);
+                    }
+                }, 20);
+            });
+        }
 
+        // Trigger number animation when section is visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateNumbers();
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
 
+        const statsSection = document.querySelector('.hero-stats');
+        if (statsSection) observer.observe(statsSection);
 
-
-
-   <!-- Footer -->
-   <div class="footer">
-    <div class="footer_wrapper">
-      <div class="row row-col-1 row-cols-md-3 g-4">
-        <div class="col">
-          <img src="img/logo.jpg" alt="Logo image" >
-        </div>
-        <div class="col">
-          <h3>Company</h3>
-          <a href="index.html">Blog</a>
-          <a href="contact.html">Contact</a>
-        </div>
-        <div class="col">
-          <h3>Follow Us</h3>
-          <div class="links">
-            <a href="#">LinkedIn</a><br>
-            <a href="#">Facebook</a><br>
-            <a href="#">Twitter</a><br>
-          </div>
-        </div>
-      </div>
-        <h2>&copy 2025 CodeVision Lab. All Rights Reserved</h2>
-        <h4>Made with ❤️ by CodeVision Lab</h4>
-    </div>
-  </div>
-
-    <!-- Bootstrap Javascript file  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-   
-  
+        // Program card interactions
+        document.querySelectorAll('.program-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-10px) scale(1.02)';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                if (!this.classList.contains('featured')) {
+                    this.style.transform = 'translateY(0) scale(1)';
+                } else {
+                    this.style.transform = 'translateY(0) scale(1.02)';
+                }
+            });
+        });
+    </script>
 </body>
 </html>

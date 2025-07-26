@@ -1,183 +1,946 @@
-body{
-    width: 100%;
-    margin: 0;
-    padding: 0;
-}
+/* Admission Page Specific Styles */
 
-.banner{
-    width: 100%;
-    height: 450px;
-    background-color: #5c6690;
-}
-
-.banner h2, p{
-    color: #fff;
-    font-weight: bold;
-    text-align: center;
-    padding: 11px;
-}
-.banner p{
-    color: #fff;
-    font-size: 18px;
-  
-}
-.banner h2{
+/* Admission Hero Section */
+.admission-hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+    color: var(--white);
+    overflow: hidden;
     padding-top: 100px;
 }
-.course_selection .col{
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin: 5px;
-    height: 500px;
-}
-.course_selection .card{
-    background-color: #111731;
-    color: #fff;
-    text-align: center;
-    height: auto;
-    padding: 20px;
-}
-.course_selection{
-    width: 80%;
-    margin: auto;
-    height: auto;
-    margin-top: 50px;
-    margin-bottom: 150px;
 
-}
-.course_selection h1{
-    text-align: center;
-    margin-bottom: 20px;
-    font-weight: bold;
-}
-.course_selection .card-body{
-    height: 250px;
-    color: #2d2626;
-    margin-top: 20px;
+.admission-hero-section .gradient-text {
+    background: linear-gradient(135deg, #fbbf24 0%, #f59e0b 50%, #d97706 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradientMove 3s ease-in-out infinite;
 }
 
-.course_selection p{
-    color: #312525;
+/* Programs Section */
+.programs-section {
+    padding: 8rem 0;
+    background: var(--white);
 }
 
-.course_selection a{
-    text-decoration: none;
-    width: 100px;
+.program-card {
+    background: var(--white);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid transparent;
+}
+
+.program-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-color);
+}
+
+.program-card.featured {
+    border-color: var(--primary-color);
+    transform: scale(1.02);
+}
+
+.program-card.featured:hover {
+    transform: scale(1.02) translateY(-10px);
+}
+
+.program-header {
+    position: relative;
+    padding: 2rem 2rem 1rem;
+    background: linear-gradient(135deg, #f8fafc 0%, #f1f5f9 100%);
+}
+
+.program-icon {
+    width: 80px;
     height: 80px;
-    background-color: #87152a;
-    color: #fff;
-    font-weight: bold;
-    font-size: 15px;
-    border-radius: 10px;
-    padding: 7px;
-    margin-top: 100px !important;
-    margin-left: 120px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--white);
+    transition: var(--transition);
 }
 
-.card-body p{
-    font-size: 16px;
-    text-align: left;
-    color: rgb(132, 126, 126);
-}
-.card-body span{
-    color: rgb(52, 35, 35);
-    font-weight: bold;
-   margin: 0px;
-}
-.card h4{
-    color: #fff;
-    font-weight: bold;
-    font-size: 15px;
-    text-align: left;
+.program-card:hover .program-icon {
+    transform: scale(1.1);
 }
 
-.intro_heading{
-    margin-top: 20px;
-    margin-bottom: 10px;
+.program-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
 }
 
-/*Mission Section*/
-.mission_container{
-	width: 80%;
-	margin: auto;
-	display: flex;
-	flex-direction: row;
-}
-.img_icon img{
-	width: 100px;
-	height: 100px;
-}
-.mission_section{
-	width: 80%;
-	margin: auto;
-	
-}
-.mission_icon{
-	width: 100px;
-}
-.mission_icon img{
-	width: 100px;
-	height: 100px;
-}
-.intro_heading {
-	padding-top: 20px;
-   	color: #87152a;
-    padding-left: 260px;
-    font-size: 30px;
-	font-weight: bold;
-}
-/* Vision Statement Section */
-.vision_container{
-	width: 80%;
-	margin: auto;
-	display: flex;
-	flex-direction: row;
-}
-.vision_container img{
-	margin-top: -20px;
-	width: 120px;
-	height: 100px;
-}
-.goal{
-	margin-top: 50px;
-	margin-bottom: 10px;
-	padding-left: 280px;
-	font-size: 30px;
-	font-weight: bold;
-	color: #87152a;
-}
-/* End of Vision */
-
-@media (max-width: 768px){
-    .course_selection{
-        width: 90%;
-        margin: auto;
-        height: auto;
-        margin-top: 50px;
-        margin-bottom: 100px;
-    
-    }
-    .course_selection .col{
-        margin-bottom: 30px;
-    }
-    .course_selection h1{
-        font-size: 40px;
-    }
+.program-badge.beginner {
+    background: linear-gradient(135deg, #10b981 0%, #059669 100%);
 }
 
-.enrol-btn {
-    background-color: #87152a; 
-    color: white;
-    padding: 10px 20px;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.program-badge.popular {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+}
+
+.program-badge.trending {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.program-content {
+    padding: 2rem;
+}
+
+.program-content h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
     text-align: center;
-    font-size: 16px;
-    width: 100%; 
-  }
-  
-  .enrol-btn:hover {
-    background-color:rgb(159, 3, 159); 
-  }
-  
+}
+
+.program-duration {
+    color: var(--primary-color);
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.125rem;
+}
+
+.program-description {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.program-features {
+    margin-bottom: 2rem;
+}
+
+.program-features .feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    font-size: 0.875rem;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.program-features .feature i {
+    color: var(--secondary-color);
+    margin-right: 0.75rem;
+    font-size: 1rem;
+}
+
+.program-pricing {
+    background: rgba(59, 130, 246, 0.05);
+    border-radius: var(--border-radius);
+    padding: 1.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.program-pricing .price {
+    display: flex;
+    align-items: baseline;
+    justify-content: center;
+    margin-bottom: 0.5rem;
+}
+
+.program-pricing .currency {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-light);
+    margin-right: 0.25rem;
+}
+
+.program-pricing .amount {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--primary-color);
+}
+
+.program-pricing .payment-options {
+    color: var(--text-light);
+    font-size: 0.875rem;
+    font-style: italic;
+}
+
+.program-footer {
+    padding: 2rem;
+    border-top: 1px solid var(--border-color);
+    display: flex;
+    gap: 1rem;
+}
+
+.program-footer .btn {
+    flex: 1;
+}
+
+/* Requirements Section */
+.requirements-section {
+    padding: 8rem 0;
+    background: var(--light-color);
+}
+
+.requirements-list {
+    margin-top: 2rem;
+}
+
+.requirement-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    padding: 1.5rem;
+    background: var(--white);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: var(--transition);
+}
+
+.requirement-item:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
+}
+
+.req-icon {
+    width: 60px;
+    height: 60px;
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+}
+
+.req-content h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.req-content p {
+    color: var(--text-light);
+    margin: 0;
+}
+
+.admission-process {
+    background: var(--white);
+    border-radius: var(--border-radius-lg);
+    padding: 3rem;
+    box-shadow: var(--shadow-md);
+}
+
+.admission-process h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.process-steps {
+    position: relative;
+}
+
+.step-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.step-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    left: 20px;
+    top: 50px;
+    width: 2px;
+    height: calc(100% - 10px);
+    background: linear-gradient(to bottom, var(--primary-color), transparent);
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    color: var(--white);
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1.5rem;
+    flex-shrink: 0;
+    position: relative;
+    z-index: 2;
+}
+
+.step-content h5 {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.step-content p {
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* Payment Section */
+.payment-section {
+    padding: 8rem 0;
+    background: var(--white);
+}
+
+.payment-card {
+    background: var(--white);
+    padding: 3rem 2rem;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    height: 100%;
+    text-align: center;
+    border: 2px solid transparent;
+    position: relative;
+}
+
+.payment-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-color);
+}
+
+.payment-card.featured {
+    border-color: var(--primary-color);
+    transform: scale(1.02);
+}
+
+.payment-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--gradient-secondary);
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.payment-icon {
+    width: 80px;
+    height: 80px;
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: 50%;
+    margin: 0 auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.payment-card:hover .payment-icon {
+    background: var(--primary-color);
+    color: var(--white);
+    transform: scale(1.1);
+}
+
+.payment-card h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.payment-card p {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.payment-benefits {
+    text-align: left;
+}
+
+.payment-benefits .benefit {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    color: var(--text-dark);
+    font-weight: 500;
+}
+
+.payment-benefits .benefit i {
+    color: var(--secondary-color);
+    margin-right: 0.75rem;
+    font-size: 1rem;
+}
+
+/* Success Stories Section */
+.success-stories-section {
+    padding: 8rem 0;
+    background: var(--light-color);
+}
+
+.story-card {
+    background: var(--white);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    height: 100%;
+    overflow: hidden;
+}
+
+.story-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+}
+
+.student-avatar {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+}
+
+.student-avatar img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: var(--transition);
+}
+
+.story-card:hover .student-avatar img {
+    transform: scale(1.05);
+}
+
+.story-content {
+    padding: 2rem;
+}
+
+.quote {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.quote i {
+    color: var(--primary-color);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.quote p {
+    color: var(--text-light);
+    font-style: italic;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.student-info h5 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.student-info .position {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.875rem;
+    display: block;
+    margin-bottom: 0.25rem;
+}
+
+.student-info .program {
+    color: var(--text-light);
+    font-size: 0.875rem;
+    display: block;
+}
+
+/* Application Section */
+.application-section {
+    padding: 8rem 0;
+    background: var(--gradient-dark);
+    color: var(--white);
+}
+
+.application-content h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+}
+
+.application-content p {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.application-benefits {
+    margin-bottom: 3rem;
+}
+
+.application-benefits .benefit-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.application-benefits .benefit-item i {
+    color: var(--secondary-color);
+    font-size: 1.25rem;
+    margin-right: 1rem;
+    width: 24px;
+}
+
+.contact-info {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 1.5rem;
+    border-radius: var(--border-radius);
+    backdrop-filter: blur(10px);
+}
+
+.contact-info h5 {
+    color: var(--white);
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+
+.contact-info .contact-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.contact-info .contact-item i {
+    color: var(--secondary-color);
+    width: 20px;
+    margin-right: 0.5rem;
+}
+
+.application-form-card {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-xl);
+    color: var(--text-dark);
+}
+
+.application-form-card h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.application-form-card p {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.application-buttons {
+    margin-bottom: 2rem;
+}
+
+.application-buttons .btn {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.form-info {
+    text-align: center;
+}
+
+.quick-actions {
+    border-top: 1px solid var(--border-color);
+    padding-top: 2rem;
+}
+
+.quick-actions h6 {
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 1rem;
+}
+
+.action-buttons .btn {
+    flex: 1;
+}
+
+/* Floating Cards for Admission Page */
+.admission-hero-section .floating-card {
+    position: absolute;
+    background: var(--white);
+    color: var(--text-dark);
+    padding: 0.75rem 1.25rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    animation: cardFloat 4s ease-in-out infinite;
+    font-size: 0.875rem;
+}
+
+.admission-hero-section .floating-card i {
+    font-size: 1.25rem;
+}
+
+/* Specific colors for floating cards */
+.admission-hero-section .floating-card.card-1 i {
+    color: #3b82f6; /* Web Dev Blue */
+}
+
+.admission-hero-section .floating-card.card-2 i {
+    color: #10b981; /* Mobile Green */
+}
+
+.admission-hero-section .floating-card.card-3 i {
+    color: #f59e0b; /* Design Orange */
+}
+
+/* Special animations for admission page */
+@keyframes admissionFloat {
+    0%, 100% { 
+        transform: translateY(0px) rotate(0deg); 
+    }
+    50% { 
+        transform: translateY(-25px) rotate(2deg); 
+    }
+}
+
+.admission-hero-section .main-image {
+    animation: admissionFloat 8s ease-in-out infinite;
+}
+
+/* Enhanced program card animations */
+@keyframes programGlow {
+    0%, 100% { 
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    }
+    50% { 
+        box-shadow: 0 20px 40px rgba(59, 130, 246, 0.2); 
+    }
+}
+
+.program-card.featured {
+    animation: programGlow 3s ease-in-out infinite;
+}
+
+/* Responsive Design for Admission Page */
+@media (max-width: 992px) {
+    .admission-hero-section .floating-card {
+        display: none;
+    }
+    
+    .program-card.featured {
+        transform: none;
+        animation: none;
+    }
+    
+    .program-card.featured:hover {
+        transform: translateY(-10px);
+    }
+    
+    .action-buttons {
+        flex-direction: column;
+    }
+    
+    .program-footer {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 768px) {
+    .admission-hero-section {
+        text-align: center;
+        padding-top: 120px;
+    }
+    
+    .program-card {
+        margin-bottom: 2rem;
+    }
+    
+    .program-header {
+        padding: 1.5rem 1.5rem 1rem;
+    }
+    
+    .program-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .program-content {
+        padding: 1.5rem;
+    }
+    
+    .program-pricing {
+        padding: 1rem;
+    }
+    
+    .program-pricing .amount {
+        font-size: 2rem;
+    }
+    
+    .program-footer {
+        padding: 1.5rem;
+    }
+    
+    .requirement-item {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    
+    .req-icon {
+        width: 50px;
+        height: 50px;
+        font-size: 1.25rem;
+        margin-right: 1rem;
+    }
+    
+    .admission-process {
+        padding: 2rem;
+    }
+    
+    .step-item:not(:last-child)::after {
+        left: 15px;
+    }
+    
+    .step-number {
+        width: 30px;
+        height: 30px;
+        font-size: 0.875rem;
+        margin-right: 1rem;
+    }
+    
+    .payment-card {
+        padding: 2rem 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .payment-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .story-card {
+        margin-bottom: 2rem;
+    }
+    
+    .student-avatar {
+        height: 150px;
+    }
+    
+    .story-content {
+        padding: 1.5rem;
+    }
+    
+    .application-form-card {
+        padding: 2rem;
+    }
+    
+    .application-content {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .admission-hero-section .hero-title {
+        font-size: 2rem;
+    }
+    
+    .program-content h3 {
+        font-size: 1.5rem;
+    }
+    
+    .program-duration {
+        font-size: 1rem;
+    }
+    
+    .program-pricing .amount {
+        font-size: 1.75rem;
+    }
+    
+    .requirement-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .req-icon {
+        margin: 0 auto 1rem;
+    }
+    
+    .step-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .step-item:not(:last-child)::after {
+        display: none;
+    }
+    
+    .step-number {
+        margin: 0 auto 1rem;
+    }
+    
+    .payment-benefits {
+        text-align: center;
+    }
+    
+    .payment-benefits .benefit {
+        justify-content: center;
+    }
+    
+    .quote i {
+        font-size: 1.5rem;
+    }
+    
+    .application-benefits .benefit-item {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .application-benefits .benefit-item i {
+        margin-bottom: 0.5rem;
+    }
+    
+    .application-form-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Special Visual Effects */
+.programs-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="1" fill="%236366f1" opacity="0.1"/></svg>') repeat;
+    pointer-events: none;
+}
+
+/* Enhanced Hover Effects */
+.program-card:hover .program-badge {
+    transform: scale(1.1);
+}
+
+.payment-card:hover .payment-badge {
+    transform: scale(1.1);
+}
+
+.story-card:hover .quote i {
+    color: var(--secondary-color);
+}
+
+.requirement-item:hover .req-icon {
+    background: var(--primary-color);
+    color: var(--white);
+}
+
+/* Focus states for accessibility */
+.program-footer .btn:focus,
+.application-buttons .btn:focus,
+.action-buttons .btn:focus {
+    outline: none;
+    box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.25);
+}
+
+/* Loading states */
+.program-card.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.application-form-card.loading {
+    opacity: 0.8;
+    pointer-events: none;
+}
+
+/* Success states */
+.application-success {
+    background: var(--success-color);
+    color: var(--white);
+    padding: 1rem;
+    border-radius: var(--border-radius);
+    margin-bottom: 1rem;
+    text-align: center;
+    display: none;
+}
+
+.application-success.show {
+    display: block;
+    animation: slideDown 0.3s ease-out;
+}
+
+/* Professional styling for academic appeal */
+.admission-hero-section {
+    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 50%, #a855f7 100%);
+}
+
+/* Enhanced program type colors */
+.program-header:hover {
+    background: linear-gradient(135deg, #ede9fe 0%, #ddd6fe 100%);
+}
+
+.program-card.featured .program-header {
+    background: linear-gradient(135deg, #dbeafe 0%, #bfdbfe 100%);
+}
+
+/* Admission-specific gradients */
+.requirements-section .section-title {
+    background: var(--gradient-primary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.payment-section .section-title {
+    background: var(--gradient-secondary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}  
