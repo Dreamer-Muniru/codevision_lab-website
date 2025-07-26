@@ -1,130 +1,729 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>CodeVision Lab</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="css/contact.css">
-    <link rel="stylesheet" type="text/css" href="css/index.css">
-</head>
-
-<body>
-    <!-- Header -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-          <a class="navbar-brand" href="index.html">
-              <img src="img/logo.jpg">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-              <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                  <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                  </li>
-                  <!-- <li class="nav-item ">
-                    <button class="nav-link" id="pills-our_programs-tab" onclick="scrollToPrograms()" data-bs-toggle="pill" data-bs-target="#pills-our_programs" type="button" role="tab" aria-controls="pills-our_programs" aria-selected="false">Our Programs</button>
-                  </li> -->
-                  <li class="nav-item dropdown" id="pills-our_programs-tab" type="button" role="tab" aria-controls="pills-our_programs" aria-selected="false" >
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                      Our Programs
-                    </a>
-                    <ul class="dropdown-menu">
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="codingClub.html">Coding Club</a></li>
-                      <li><hr class="dropdown-divider"></li>
-                      <li><a class="dropdown-item" href="Hire_Graduate.html">Hire our Graduate</a></li>
-                    </ul>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="partnership.html">Partnership</a>
-                </li>
-          
-                  <li class="nav-item">
-                      <a class="nav-link" href="contact.html">Contact</a>
-                  </li>
-              </ul>
-          </div>
-      </div>
-  </nav>
-    <!-- End of Header -->
-
-    <!-- Contect Us -->
-    <div class="contact_container">
-      
-        <h3>Contact Us</h3>
-        <h1>Let's Get in Touch</h1>
-        <div class="row row-cols-1 row-cols-md-3 g-4">
-            <div class="col">
-              <div class="card">
-                <img src="img/location.png" class="card-img-top" alt="Location">
-                <div class="card-body">
-                  <h5 class="card-title">Location</h5>
-                  <p class="card-text">C/O Gate360, Garu UE/R</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card email_container">
-                <img src="img/email.png" class="card-img-top" alt="email address">
-                <div class="card-body">
-                  <h5 class="card-title">Email Address</h5>
-                  <p class="card-text">codevisionlab1@gmail.com</p>
-                </div>
-              </div>
-            </div>
-            <div class="col">
-              <div class="card">
-                <img src="img/call.jpg" class="card-img-top" alt="call">
-                <div class="card-body">
-                  <h5 class="card-title">Phone</h5>
-                  <p class="card-text">+223 240527043</p>
-                </div>
-              </div>
-            </div>
-           
-          </div>
-    </div>
-    <!-- End of Contact -->
+    <title>Contact Us - CodeVision Lab | Get in Touch with Our Team</title>
     
-     <!-- Footer -->
-   <div class="footer">
-    <div class="footer_wrapper">
-      <div class="row row-col-1 row-cols-md-3 g-4">
-        <div class="col">
-          <img src="img/logo.jpg" alt="Logo image" >
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Contact CodeVision Lab for inquiries about tech education programs, partnerships, admissions, and career opportunities. Multiple ways to reach our team in Accra, Ghana.">
+    <meta name="keywords" content="contact CodeVision Lab, tech education inquiries, Ghana contact, programming courses contact, partnership inquiries, admissions Ghana">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" type="text/css" href="css/contact.css">
+</head>
+<body>
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center">
+                <i class="fas fa-phone me-2"></i>
+                <span>📞 Ready to Start Your Tech Journey? Contact Us Today!</span>
+                <a href="#contact-form" class="ms-3 banner-cta">Get in Touch <i class="fas fa-arrow-right ms-1"></i></a>
+            </div>
         </div>
-        <div class="col">
-          <h3>Company</h3>
-            <a href="index.html">About</a> <br> 
-            <a href="contact.html">Contact</a> <br>
-            <a href="partnership.html">Partnership</a> <br>
-            <a href="Hire_Graduate.html">Hire our Graduates</a> 
-        </div>
-        <div class="col">
-          <h3>Follow Us</h3>
-          <div class="links">
-            <a href="#">LinkedIn</a><br>
-            <a href="#">Facebook</a><br>
-            <a href="#">Twitter</a><br>
-          </div>
-        </div>
-      </div>
-        <h2>&copy 2025 CodeVision Lab. All Rights Reserved</h2>
-        <h4>Made with ❤️ by CodeVision Lab</h4>
     </div>
-  </div>
-  
-    <!-- Bootstrap Javascript file  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNavbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/logo.jpg" alt="CodeVision Lab Logo" class="logo">
+                <span class="brand-text">CodeVision Lab</span>
+            </a>
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Programs
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="codingClub.html"><i class="fas fa-code me-2"></i>Coding Club</a></li>
+                            <li><a class="dropdown-item" href="Hire_Graduate.html"><i class="fas fa-briefcase me-2"></i>Hire our Graduates</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="partnership.html">Partnership</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact-form" class="btn btn-primary nav-cta">Get in Touch</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="contact-hero-section">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <i class="fas fa-comments me-2"></i>
+                            Let's Connect
+                        </div>
+                        <h1 class="hero-title">
+                            Ready to <span class="gradient-text">Transform</span> 
+                            Your Future?
+                        </h1>
+                        <p class="hero-description">
+                            Whether you're interested in our programs, exploring partnerships, or have questions 
+                            about tech education, we're here to help. Connect with our friendly team and let's 
+                            start your journey together.
+                        </p>
+                        
+                        <div class="hero-actions">
+                            <a href="#contact-form" class="btn btn-primary btn-lg hero-btn">
+                                Start Conversation
+                                <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                            <a href="#office-hours" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-clock me-2"></i>
+                                Visit Our Office
+                            </a>
+                        </div>
+                        
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">24hrs</div>
+                                <div class="stat-label">Response Time</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">5+</div>
+                                <div class="stat-label">Contact Methods</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">100%</div>
+                                <div class="stat-label">Support Coverage</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <img src="img/contact_image.jpg" alt="Contact Us" class="main-image">
+                            <div class="floating-card card-1">
+                                <i class="fas fa-envelope"></i>
+                                <span>Email</span>
+                            </div>
+                            <div class="floating-card card-2">
+                                <i class="fas fa-phone"></i>
+                                <span>Call</span>
+                            </div>
+                            <div class="floating-card card-3">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <span>Visit</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Methods Section -->
+    <section class="contact-methods-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <div class="section-badge">
+                    <i class="fas fa-address-book me-2"></i>
+                    Multiple Ways to Reach Us
+                </div>
+                <h2 class="section-title">Choose Your Preferred Contact Method</h2>
+                <p class="section-description">
+                    We're available through various channels to make it easy for you to connect with us
+                </p>
+            </div>
+            
+            <div class="row g-4 mt-5">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <h4>Visit Our Office</h4>
+                        <p class="contact-info">C/O Gate360, Garu UE/R, Ghana</p>
+                        <p class="contact-description">
+                            Come visit our modern tech hub in Garu. We'd love to show you around 
+                            our facilities and discuss your goals in person.
+                        </p>
+                        <a href="#office-hours" class="contact-link">
+                            View Office Hours <i class="fas fa-arrow-right ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="contact-card featured">
+                        <div class="contact-badge">Most Popular</div>
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4>Send Us an Email</h4>
+                        <p class="contact-info">codevisionlab1@gmail.com</p>
+                        <p class="contact-description">
+                            Email us your questions, and we'll get back to you within 24 hours. 
+                            Perfect for detailed inquiries and documentation.
+                        </p>
+                        <a href="mailto:codevisionlab1@gmail.com" class="contact-link">
+                            Send Email <i class="fas fa-external-link-alt ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <h4>Give Us a Call</h4>
+                        <p class="contact-info">+233 240 527 043</p>
+                        <p class="contact-description">
+                            Speak directly with our team for immediate assistance. 
+                            Available during business hours for urgent inquiries.
+                        </p>
+                        <a href="tel:+233240527043" class="contact-link">
+                            Call Now <i class="fas fa-phone ms-1"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="contact-form-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="form-content">
+                        <h2>Send Us a Message</h2>
+                        <p>
+                            Have a specific question or want to learn more about our programs? 
+                            Fill out the form and we'll get back to you as soon as possible.
+                        </p>
+                        <div class="contact-benefits">
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>24-hour response guarantee</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Personalized consultation</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>No obligation discussion</span>
+                            </div>
+                            <div class="benefit-item">
+                                <i class="fas fa-check-circle"></i>
+                                <span>Expert guidance provided</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="contact-form-card">
+                        <form class="contact-form" id="contactForm">
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="firstName" class="form-label">First Name *</label>
+                                    <input type="text" class="form-control" id="firstName" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="lastName" class="form-label">Last Name *</label>
+                                    <input type="text" class="form-control" id="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="row">
+                                <div class="col-md-6 mb-3">
+                                    <label for="email" class="form-label">Email Address *</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="col-md-6 mb-3">
+                                    <label for="phone" class="form-label">Phone Number</label>
+                                    <input type="tel" class="form-control" id="phone">
+                                </div>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="subject" class="form-label">Subject *</label>
+                                <select class="form-select" id="subject" required>
+                                    <option value="">Choose a topic...</option>
+                                    <option value="programs">Program Information</option>
+                                    <option value="admissions">Admissions Inquiry</option>
+                                    <option value="partnership">Partnership Opportunity</option>
+                                    <option value="hiring">Hiring Our Graduates</option>
+                                    <option value="general">General Question</option>
+                                    <option value="support">Technical Support</option>
+                                </select>
+                            </div>
+                            
+                            <div class="mb-3">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea class="form-control" id="message" rows="5" placeholder="Tell us how we can help you..." required></textarea>
+                            </div>
+                            
+                            <div class="form-check mb-4">
+                                <input class="form-check-input" type="checkbox" id="newsletter">
+                                <label class="form-check-label" for="newsletter">
+                                    Subscribe to our newsletter for tech education updates
+                                </label>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary btn-lg w-100">
+                                <i class="fas fa-paper-plane me-2"></i>
+                                Send Message
+                            </button>
+                            
+                            <p class="form-note mt-3">
+                                <i class="fas fa-shield-alt me-2"></i>
+                                Your information is secure and will only be used to respond to your inquiry.
+                            </p>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Office Hours & Location Section -->
+    <section id="office-hours" class="office-info-section">
+        <div class="container">
+            <div class="row g-5">
+                <div class="col-lg-6" data-aos="fade-up">
+                    <div class="office-hours-card">
+                        <h3><i class="fas fa-clock me-3"></i>Office Hours</h3>
+                        <div class="hours-list">
+                            <div class="hours-item">
+                                <span class="day">Monday - Friday</span>
+                                <span class="time">8:00 AM - 6:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="day">Saturday</span>
+                                <span class="time">9:00 AM - 4:00 PM</span>
+                            </div>
+                            <div class="hours-item">
+                                <span class="day">Sunday</span>
+                                <span class="time">Closed</span>
+                            </div>
+                        </div>
+                        <div class="office-note">
+                            <i class="fas fa-info-circle me-2"></i>
+                            <span>Walk-ins welcome, but appointments are recommended for personalized consultations.</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="location-card">
+                        <h3><i class="fas fa-map-marker-alt me-3"></i>Find Us</h3>
+                        <div class="location-info">
+                            <div class="address">
+                                <h5>CodeVision Lab Ghana</h5>
+                                <p>C/O Gate360<br>Garu, Upper East Region<br>Ghana</p>
+                            </div>
+                            <div class="directions">
+                                <a href="#" class="btn btn-outline-primary">
+                                    <i class="fas fa-directions me-2"></i>
+                                    Get Directions
+                                </a>
+                            </div>
+                        </div>
+                        <div class="transportation">
+                            <h6>Transportation</h6>
+                            <ul>
+                                <li><i class="fas fa-car me-2"></i>Free parking available</li>
+                                <li><i class="fas fa-bus me-2"></i>Public transport accessible</li>
+                                <li><i class="fas fa-motorcycle me-2"></i>Motorbike parking</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Social Media & Channels Section -->
+    <section class="social-channels-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <div class="section-badge">
+                    <i class="fas fa-share-alt me-2"></i>
+                    Follow & Connect
+                </div>
+                <h2 class="section-title">Stay Connected With Us</h2>
+                <p class="section-description">
+                    Follow us on social media for updates, tech tips, and community highlights
+                </p>
+            </div>
+            
+            <div class="row g-4 mt-5 justify-content-center">
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="social-card">
+                        <div class="social-icon linkedin">
+                            <i class="fab fa-linkedin"></i>
+                        </div>
+                        <h4>LinkedIn</h4>
+                        <p>Professional updates and industry insights</p>
+                        <a href="#" class="social-link">Follow us <i class="fas fa-external-link-alt ms-1"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="social-card">
+                        <div class="social-icon facebook">
+                            <i class="fab fa-facebook"></i>
+                        </div>
+                        <h4>Facebook</h4>
+                        <p>Community events and student highlights</p>
+                        <a href="#" class="social-link">Like our page <i class="fas fa-external-link-alt ms-1"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="social-card">
+                        <div class="social-icon twitter">
+                            <i class="fab fa-twitter"></i>
+                        </div>
+                        <h4>Twitter</h4>
+                        <p>Real-time updates and tech news</p>
+                        <a href="#" class="social-link">Follow @CodeVisionLab <i class="fas fa-external-link-alt ms-1"></i></a>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+                    <div class="social-card">
+                        <div class="social-icon instagram">
+                            <i class="fab fa-instagram"></i>
+                        </div>
+                        <h4>Instagram</h4>
+                        <p>Behind the scenes and student stories</p>
+                        <a href="#" class="social-link">Follow us <i class="fas fa-external-link-alt ms-1"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <div class="section-badge">
+                    <i class="fas fa-question-circle me-2"></i>
+                    Frequently Asked Questions
+                </div>
+                <h2 class="section-title">Quick Answers to Common Questions</h2>
+                <p class="section-description">
+                    Find answers to the most commonly asked questions about our programs and services
+                </p>
+            </div>
+            
+            <div class="row mt-5">
+                <div class="col-lg-8 mx-auto">
+                    <div class="accordion" id="faqAccordion" data-aos="fade-up">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    What programs do you offer?
+                                </button>
+                            </h2>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We offer comprehensive tech education programs including web development, mobile app development, 
+                                    data science, cybersecurity, and coding clubs for K-12 students. Our programs cater to all skill levels.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    How can I apply for your programs?
+                                </button>
+                            </h2>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    You can apply through our online application form on the homepage or contact us directly. 
+                                    We also offer consultation sessions to help you choose the right program for your goals.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Do you offer scholarships?
+                                </button>
+                            </h2>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Yes! We offer various scholarship opportunities through our partnership programs. 
+                                    Contact us to learn about current scholarship availability and application requirements.
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="accordion-item">
+                            <h2 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4">
+                                    What are your class schedules?
+                                </button>
+                            </h2>
+                            <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    We offer flexible scheduling including weekday, evening, and weekend classes. 
+                                    Both part-time and full-time options are available to accommodate different lifestyles and commitments.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <img src="img/logo.jpg" alt="CodeVision Lab Logo" class="footer-logo">
+                        <h4>CodeVision Lab</h4>
+                        <p>Empowering the next generation of tech leaders through innovative education and hands-on training programs.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5>Quick Links</h5>
+                        <ul>
+                            <li><a href="index.html">About</a></li>
+                            <li><a href="codingClub.html">Programs</a></li>
+                            <li><a href="partnership.html">Partnership</a></li>
+                            <li><a href="Hire_Graduate.html">Hire Graduates</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5>Support</h5>
+                        <ul>
+                            <li><a href="#faq-section">FAQ</a></li>
+                            <li><a href="#contact-form">Contact Form</a></li>
+                            <li><a href="tel:+233240527043">Emergency Support</a></li>
+                            <li><a href="#office-hours">Office Hours</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-contact">
+                        <h5>Contact Information</h5>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope me-3"></i>
+                            <span>codevisionlab1@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone me-3"></i>
+                            <span>+233 240 527 043</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt me-3"></i>
+                            <span>C/O Gate360, Garu UE/R, Ghana</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>&copy; 2025 CodeVision Lab. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>Connecting Dreams with Technology <i class="fas fa-heart text-danger"></i></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
     <script>
-      function scrollToPrograms() {
-          var programsSection = document.getElementById("our_programs");
-          programsSection.scrollIntoView({ behavior: 'smooth' });
-      }
-  </script>
-  
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('mainNavbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Contact form handling
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            // Get form data
+            const formData = {
+                firstName: document.getElementById('firstName').value,
+                lastName: document.getElementById('lastName').value,
+                email: document.getElementById('email').value,
+                phone: document.getElementById('phone').value,
+                subject: document.getElementById('subject').value,
+                message: document.getElementById('message').value,
+                newsletter: document.getElementById('newsletter').checked
+            };
+            
+            // Show success message (in a real implementation, you'd send this to a server)
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.innerHTML;
+            
+            submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>Sending...';
+            submitBtn.disabled = true;
+            
+            setTimeout(() => {
+                submitBtn.innerHTML = '<i class="fas fa-check me-2"></i>Message Sent!';
+                submitBtn.classList.remove('btn-primary');
+                submitBtn.classList.add('btn-success');
+                
+                // Reset form
+                this.reset();
+                
+                // Show thank you message
+                alert('Thank you for your message! We\'ll get back to you within 24 hours.');
+                
+                // Reset button after 3 seconds
+                setTimeout(() => {
+                    submitBtn.innerHTML = originalText;
+                    submitBtn.classList.remove('btn-success');
+                    submitBtn.classList.add('btn-primary');
+                    submitBtn.disabled = false;
+                }, 3000);
+            }, 2000);
+        });
+
+        // Animate numbers in stats
+        function animateNumbers() {
+            const stats = document.querySelectorAll('.stat-number');
+            stats.forEach(stat => {
+                const text = stat.innerText;
+                if (text.includes('24hrs')) {
+                    // Don't animate text stats
+                    return;
+                }
+                
+                const target = text.replace(/[^\d]/g, '');
+                const targetNum = parseInt(target);
+                const increment = targetNum / 50;
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= targetNum) {
+                        current = targetNum;
+                        clearInterval(timer);
+                    }
+                    
+                    if (text.includes('%')) {
+                        stat.innerText = Math.floor(current) + '%';
+                    } else if (text.includes('+')) {
+                        stat.innerText = Math.floor(current) + '+';
+                    } else {
+                        stat.innerText = Math.floor(current);
+                    }
+                }, 20);
+            });
+        }
+
+        // Trigger number animation when section is visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateNumbers();
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        const statsSection = document.querySelector('.hero-stats');
+        if (statsSection) observer.observe(statsSection);
+    </script>
 </body>
 </html>
