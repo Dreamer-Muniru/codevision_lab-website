@@ -1,51 +1,777 @@
+/* Partnership Page Specific Styles */
 
-
-.contact_container img{
-    width: 800px;
-    height: 600px;
-}
-.contact_container .col{
-    background-color: rgb(238, 233, 233);
-}
-.text_grid{
-    margin: 50px;
-}
-
-.text_grid h2{
-    font-weight: bold;
-    font-size: 40px;
-}
-.text_grid p{
-    padding-top: 50px;
-    font-weight: 400;
+/* Partnership Hero Section */
+.partnership-hero-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: linear-gradient(135deg, #1a202c 0%, #2d3748 50%, #1a365d 100%);
+    color: var(--white);
+    overflow: hidden;
+    padding-top: 100px;
 }
 
-/* Partnership styling */
-.partner_option h1{
-    margin-top: 50px;
+.partnership-hero-section .gradient-text {
+    background: linear-gradient(135deg, #f6ad55 0%, #ed8936 50%, #dd6b20 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 200%;
+    animation: gradientMove 3s ease-in-out infinite;
+}
+
+/* Why Partner Section */
+.why-partner-section {
+    padding: 8rem 0;
+    background: var(--white);
+}
+
+.benefit-card {
+    background: var(--white);
+    padding: 3rem 2rem;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    height: 100%;
     text-align: center;
-    margin-bottom: 20px;
-    font-weight: bold;
-
+    border: 2px solid transparent;
+    position: relative;
 }
 
-.partner_option .card-body h5{
+.benefit-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-color);
+}
+
+.benefit-icon {
+    width: 100px;
+    height: 100px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    margin: 0 auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: var(--white);
+    transition: var(--transition);
+    position: relative;
+}
+
+.benefit-card:hover .benefit-icon {
+    transform: scale(1.1);
+}
+
+.benefit-card:hover .benefit-icon::after {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    border: 2px solid var(--primary-color);
+    border-radius: 50%;
+    opacity: 0.3;
+    animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); opacity: 0.3; }
+    50% { transform: scale(1.1); opacity: 0.1; }
+    100% { transform: scale(1.2); opacity: 0; }
+}
+
+.benefit-card h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.benefit-card p {
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Partnership Types Section */
+.partnership-types-section {
+    padding: 8rem 0;
+    background: var(--light-color);
+}
+
+.partnership-card {
+    background: var(--white);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid transparent;
+}
+
+.partnership-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-color);
+}
+
+.partnership-card.featured {
+    border-color: var(--primary-color);
+    transform: scale(1.02);
+}
+
+.partnership-card.featured:hover {
+    transform: scale(1.02) translateY(-10px);
+}
+
+.partnership-badge {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    background: var(--gradient-secondary);
+    color: var(--white);
+    font-size: 0.75rem;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    z-index: 2;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.partnership-icon {
+    width: 100px;
+    height: 100px;
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: 50%;
+    margin: 2rem auto 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.5rem;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.partnership-card:hover .partnership-icon {
+    background: var(--primary-color);
+    color: var(--white);
+    transform: scale(1.1);
+}
+
+.partnership-card h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+    padding: 0 2rem;
     text-align: center;
-    font-weight: bold;
 }
 
-.partner_btn{
+.partnership-description {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+    padding: 0 2rem;
+    text-align: center;
+}
+
+.partnership-features {
+    padding: 0 2rem;
+    margin-bottom: 2rem;
+}
+
+.partnership-features .feature {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 0.875rem;
+    color: var(--text-light);
+    font-weight: 500;
+}
+
+.partnership-features .feature i {
+    color: var(--secondary-color);
+    margin-right: 0.5rem;
+    font-size: 1rem;
+}
+
+.partnership-footer {
+    padding: 2rem;
+    border-top: 1px solid var(--border-color);
+    text-align: center;
+}
+
+/* Current Partners Section */
+.current-partners-section {
+    padding: 8rem 0;
+    background: var(--white);
+}
+
+.partner-showcase {
+    background: var(--white);
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-md);
+    transition: var(--transition);
+    height: 100%;
+    overflow: hidden;
+    border: 2px solid transparent;
+}
+
+.partner-showcase:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-xl);
+    border-color: var(--primary-color);
+}
+
+.partner-logo {
+    padding: 3rem 2rem 2rem;
+    background: var(--light-color);
+    text-align: center;
+    height: 200px;
+    display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.text_grid a{
+.partner-logo img {
+    max-width: 150px;
+    max-height: 100px;
+    object-fit: contain;
+    filter: grayscale(100%);
+    transition: var(--transition);
+}
+
+.partner-showcase:hover .partner-logo img {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+}
+
+.partner-info {
+    padding: 2rem;
+}
+
+.partner-info h4 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 0.5rem;
+}
+
+.partner-type {
+    color: var(--primary-color);
+    font-weight: 600;
+    font-size: 0.875rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.partner-description {
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Impact Section */
+.impact-section {
+    padding: 8rem 0;
+    background: var(--gradient-dark);
+    color: var(--white);
+}
+
+.impact-card {
     text-align: center;
-    width: auto;
-	padding: 8px;
-	text-decoration: none;
-	border-radius: 8px;
-	background-color: #a32a40;
-	color: #fff;
-	font-size: 18px;
+    padding: 3rem 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: var(--border-radius-lg);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+    height: 100%;
+}
+
+.impact-card:hover {
+    transform: translateY(-5px);
+    background: rgba(255, 255, 255, 0.15);
+    border-color: var(--secondary-color);
+}
+
+.impact-number {
+    font-size: 3rem;
+    font-weight: 800;
+    color: var(--white);
+    display: block;
+    margin-bottom: 0.5rem;
+    background: var(--gradient-secondary);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.impact-label {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+.impact-card p {
+    color: rgba(255, 255, 255, 0.8);
+    margin: 0;
+    font-size: 0.95rem;
+}
+
+/* Partnership Process Section */
+.process-section {
+    padding: 8rem 0;
+    background: var(--white);
+}
+
+.process-step {
+    text-align: center;
+    padding: 2rem 1rem;
+    position: relative;
+}
+
+.step-number {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 50px;
+    background: var(--gradient-primary);
+    border-radius: 50%;
+    color: var(--white);
+    font-weight: 700;
+    font-size: 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+    box-shadow: var(--shadow-md);
+}
+
+.step-icon {
+    width: 120px;
+    height: 120px;
+    background: rgba(59, 130, 246, 0.1);
+    border-radius: 50%;
+    margin: 3rem auto 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: var(--primary-color);
+    transition: var(--transition);
+    position: relative;
+}
+
+.process-step:hover .step-icon {
+    background: var(--primary-color);
+    color: var(--white);
+    transform: scale(1.1);
+}
+
+.process-step h4 {
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.process-step p {
+    color: var(--text-light);
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* Add connecting lines between process steps on larger screens */
+@media (min-width: 992px) {
+    .process-step:not(:last-child):after {
+        content: '';
+        position: absolute;
+        top: 80px;
+        right: -25%;
+        width: 50%;
+        height: 3px;
+        background: linear-gradient(to right, var(--primary-color), transparent);
+        z-index: 1;
+    }
+}
+
+/* Partnership Form Section */
+.partnership-form-section {
+    padding: 8rem 0;
+    background: var(--gradient-dark);
+    color: var(--white);
+}
+
+.form-content h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 1.5rem;
+}
+
+.form-content p {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+.partnership-benefits {
+    margin-top: 2rem;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+    color: rgba(255, 255, 255, 0.9);
+}
+
+.benefit-item i {
+    color: var(--secondary-color);
+    font-size: 1.25rem;
+    margin-right: 1rem;
+    width: 24px;
+}
+
+.partnership-form-card {
+    background: var(--white);
+    padding: 3rem;
+    border-radius: var(--border-radius-lg);
+    box-shadow: var(--shadow-xl);
+    color: var(--text-dark);
+}
+
+.partnership-form-card h3 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: var(--text-dark);
+    margin-bottom: 1rem;
+}
+
+.partnership-form-card p {
+    color: var(--text-light);
+    margin-bottom: 2rem;
+}
+
+.form-buttons {
+    margin-bottom: 2rem;
+}
+
+.form-buttons .btn {
+    width: 100%;
+    margin-bottom: 1rem;
+}
+
+.form-info {
+    text-align: center;
+}
+
+.contact-alternative {
+    border-top: 1px solid var(--border-color);
+    padding-top: 2rem;
+    text-align: center;
+}
+
+.contact-alternative p {
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+/* Floating Cards for Partnership Page */
+.partnership-hero-section .floating-card {
+    position: absolute;
+    background: var(--white);
+    color: var(--text-dark);
+    padding: 0.75rem 1.25rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-lg);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 600;
+    animation: cardFloat 4s ease-in-out infinite;
+    font-size: 0.875rem;
+}
+
+.partnership-hero-section .floating-card i {
+    font-size: 1.25rem;
+}
+
+/* Specific colors for floating cards */
+.partnership-hero-section .floating-card.card-1 i {
+    color: #4f46e5; /* Education Purple */
+}
+
+.partnership-hero-section .floating-card.card-2 i {
+    color: #059669; /* Collaboration Green */
+}
+
+.partnership-hero-section .floating-card.card-3 i {
+    color: #dc2626; /* Innovation Red */
+}
+
+/* Special animations for partnership page */
+@keyframes partnershipFloat {
+    0%, 100% { 
+        transform: translateY(0px) rotate(0deg); 
+    }
+    50% { 
+        transform: translateY(-15px) rotate(2deg); 
+    }
+}
+
+.partnership-hero-section .main-image {
+    animation: partnershipFloat 8s ease-in-out infinite;
+}
+
+/* Responsive Design for Partnership Page */
+@media (max-width: 992px) {
+    .partnership-hero-section .floating-card {
+        display: none;
+    }
+    
+    .partnership-card.featured {
+        transform: none;
+    }
+    
+    .partnership-card.featured:hover {
+        transform: translateY(-10px);
+    }
+    
+    .process-step:after {
+        display: none;
+    }
+    
+    .benefit-card {
+        margin-bottom: 2rem;
+    }
+    
+    .partner-showcase {
+        margin-bottom: 2rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .partnership-hero-section {
+        text-align: center;
+        padding-top: 120px;
+    }
+    
+    .benefit-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .benefit-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
+    }
+    
+    .partnership-icon {
+        width: 80px;
+        height: 80px;
+        font-size: 2rem;
+        margin: 1.5rem auto 1rem;
+    }
+    
+    .partnership-card h3 {
+        font-size: 1.5rem;
+        padding: 0 1.5rem;
+    }
+    
+    .partnership-description {
+        padding: 0 1.5rem;
+    }
+    
+    .partnership-features {
+        padding: 0 1.5rem;
+    }
+    
+    .partnership-footer {
+        padding: 1.5rem;
+    }
+    
+    .partner-logo {
+        padding: 2rem 1.5rem 1.5rem;
+        height: 150px;
+    }
+    
+    .partner-logo img {
+        max-width: 120px;
+        max-height: 80px;
+    }
+    
+    .partner-info {
+        padding: 1.5rem;
+    }
+    
+    .impact-card {
+        padding: 2rem 1.5rem;
+    }
+    
+    .impact-number {
+        font-size: 2.5rem;
+    }
+    
+    .step-icon {
+        width: 100px;
+        height: 100px;
+        font-size: 2.5rem;
+        margin: 2.5rem auto 1.5rem;
+    }
+    
+    .partnership-form-card {
+        padding: 2rem;
+    }
+    
+    .form-content {
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .partnership-hero-section .hero-title {
+        font-size: 2rem;
+    }
+    
+    .benefit-card {
+        padding: 1.5rem 1rem;
+    }
+    
+    .benefit-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 1.5rem;
+    }
+    
+    .partnership-card h3 {
+        font-size: 1.25rem;
+        padding: 0 1rem;
+    }
+    
+    .partnership-description {
+        padding: 0 1rem;
+        font-size: 0.9rem;
+    }
+    
+    .partnership-features {
+        padding: 0 1rem;
+    }
+    
+    .partnership-features .feature {
+        font-size: 0.8rem;
+    }
+    
+    .partner-description {
+        font-size: 0.85rem;
+    }
+    
+    .impact-number {
+        font-size: 2rem;
+    }
+    
+    .impact-label {
+        font-size: 1rem;
+    }
+    
+    .benefit-item {
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+    }
+    
+    .benefit-item i {
+        margin-bottom: 0.5rem;
+    }
+    
+    .partnership-form-card {
+        padding: 1.5rem;
+    }
+}
+
+/* Special Visual Effects */
+.partnership-types-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="1" fill="%23f6ad55" opacity="0.1"/></svg>') repeat;
+    pointer-events: none;
+}
+
+/* Hover Effects for Better Interactivity */
+.partnership-card .btn:hover {
+    transform: translateY(-2px);
+}
+
+.partner-showcase:hover .partner-info h4 {
+    color: var(--primary-color);
+}
+
+.impact-card:hover .impact-number {
+    transform: scale(1.1);
+}
+
+.partnership-form-card .btn:hover {
+    transform: translateY(-2px);
+}
+
+/* Loading States */
+.partnership-card.loading {
+    opacity: 0.6;
+    pointer-events: none;
+}
+
+.partnership-card.loading::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 20px;
+    height: 20px;
+    border: 2px solid var(--primary-color);
+    border-top: 2px solid transparent;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    transform: translate(-50%, -50%);
+}
+
+@keyframes spin {
+    0% { transform: translate(-50%, -50%) rotate(0deg); }
+    100% { transform: translate(-50%, -50%) rotate(360deg); }
+}
+
+/* Professional color scheme for partnership appeal */
+.partnership-hero-section {
+    background: linear-gradient(135deg, #2c5282 0%, #2a4a6b 50%, #1a365d 100%);
+}
+
+.benefit-card:nth-child(1) .benefit-icon {
+    background: linear-gradient(135deg, #3b82f6 0%, #1d4ed8 100%);
+}
+
+.benefit-card:nth-child(2) .benefit-icon {
+    background: linear-gradient(135deg, #10b981 0%, #047857 100%);
+}
+
+.benefit-card:nth-child(3) .benefit-icon {
+    background: linear-gradient(135deg, #f59e0b 0%, #d97706 100%);
+}
+
+.benefit-card:nth-child(4) .benefit-icon {
+    background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
 }
