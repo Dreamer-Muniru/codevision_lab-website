@@ -1,283 +1,667 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Codevision Lab</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>CodeVision Lab - Your Digital Career Partner</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Join CodeVision Lab and transform your career with our coding bootcamps. Learn Web Development, Full Stack Development, and Mobile App Development in Ghana.">
+    <meta name="keywords" content="coding bootcamp, web development, mobile app development, tech education, Ghana, programming courses">
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
     <link rel="stylesheet" type="text/css" href="css/index.css">
 </head>
 <body>
-  <div class="application_status">
-    <h2>Admission is in progress, join the July 2025 Cohort. </h2>
-  </div>
-    <!-- Header -->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
+    <!-- Top Banner -->
+    <div class="top-banner">
+        <div class="container">
+            <div class="d-flex justify-content-center align-items-center">
+                <i class="fas fa-graduation-cap me-2"></i>
+                <span>🎓 Admission is in progress - Join the July 2025 Cohort!</span>
+                <a href="admission.html" class="ms-3 banner-cta">Apply Now <i class="fas fa-arrow-right ms-1"></i></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNavbar">
+        <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="img/logo.jpg">
+                <img src="img/logo.jpg" alt="CodeVision Lab Logo" class="logo">
+                <span class="brand-text">CodeVision Lab</span>
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-                    </li>
-                    <!-- <li class="nav-item ">
-                      <button class="nav-link" id="pills-our_programs-tab" onclick="scrollToPrograms()" data-bs-toggle="pill" data-bs-target="#pills-our_programs" type="button" role="tab" aria-controls="pills-our_programs" aria-selected="false">Our Programs</button>
-                    </li> -->
-                    <li class="nav-item dropdown" id="pills-our_programs-tab" type="button" role="tab" aria-controls="pills-our_programs" aria-selected="false" >
-                      <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Our Programs
-                      </a>
-                      <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="codingClub.html">Coding Club</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="Hire_Graduate.html">Hire our Graduate</a></li>
-                      </ul>
-                    </li>
             
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                            Programs
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="codingClub.html"><i class="fas fa-code me-2"></i>Coding Club</a></li>
+                            <li><a class="dropdown-item" href="Hire_Graduate.html"><i class="fas fa-briefcase me-2"></i>Hire our Graduates</a></li>
+                        </ul>
+                    </li>
                     <li class="nav-item">
                         <a class="nav-link" href="partnership.html">Partnership</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
                     </li>
+                    <li class="nav-item">
+                        <a href="admission.html" class="btn btn-primary nav-cta">Enroll Now</a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
-    <!-- End of Header -->
 
-   
-
-    <!-- Banner -->
-    <div class="row row-cols-1 row-cols-md-2 g-4 banner">
-        <div class="col header">
-            <h2>Your Digital Career Partner</h2>
-            <span class="banner_intro">Join a Rapidly Growing Market<span> <br>
-            <p class="banner_paragraph">
-              Demand for Software Developers is projected to grow 23% per year, which indicates that all 
-              companies - not just startups are evolving to become tech companies.
-            </p>
-            <a href="admission.html" class="learners">Enrol Now</a>
-            <!-- <button type="button" class="btn btn-primary btn-lg">Learn More</button> -->
-        </div>
-        <div class="col banner_img">
-          <img src="img/banner2.png" />
-        </div>
-    </div>
-
-  <!-- Our programs Section -->
-  <div class="container-fluid our_programs">
-    <h1>Our Courses</h1>
-    <div class="container courses_wrapper">
-      <div class="row g-4">
-        <div class="col-4 courses_column">
-          <h3>Web Design  </h3>
-          <img src="img/IMG_20210727_165912.jpg" >
-          <p>
-            This 7-week course includes 4 weeks of intensive, hands-on coding lessons and 3 weeks 
-            of online mentorship and job assistance. By the end of the program, you'll transform from
-             a novice into a confident, entry-level Web Designer.
-          </p>
-        </div>
-        
-        <div class="col-4 courses_column">
-          <h3>Full Stack Web Development</h3>
-          <img src="img/fullstack.webp">
-          <p>
-            This 4-month comprehensive course in Full Stack Software Development equips you with the skills
-             to build both front-end and back-end applications. Gain proficiency across the Full Stack and 
-             become a well-rounded developer ready for the industry.
-          </p>
-        </div>
-        <div class="col-4 courses_column">
-          <h3>Mobile App Development  </h3>
-          <img src="img/mobile_app.webp" class="adjust_image">
-          <p>
-            This 3-month course is designed to transform you from a novice into a confident, entry-level
-             Mobile App Developer. Learn to design and build functional mobile applications while mastering
-              essential development tools and techniques.
-          </p>
-        </div>
-        <div class="book_consult">
-          <h5>Not sure where to begin?</h5>
-          <a href="#">Book Free Consultation</a>
-        </div>
-        
-        
-      </div>
-    </div>
-    </div>
-  </div>
-    
-</div>
-
-
-<!-- Mission and Vision Section -->
-    <h1 class="intro_heading">Our Mission</h1>
-    <div class="mission_container">
-      <div class="img_icon">
-        <img src="img/mission.png" class="card-img-top" alt="icon">
-      </div>
-      <div class="text_content">
-        <p class="card-text">
-          CodeVision's mission is to bridge the digital divide in Ghana by providing practical
-          technology education to students, enabling them to develop real-world
-          applications and products. Our organization is committed to equipping students
-          with modern technological advancements, fostering innovation, and preparing
-          them for the challenges of the digital era.
-        </p>
-      </div>
-    </div>
-<!-- End of mission -->
-
-
-<!-- Vision Statement Section-->
-    <h1 class="goal">Our Vision</h1>
-    <div class="vision_container">
-      <div class="vision_icon">
-        <img src="img/vision.png" />
-      </div>
-      <div class="text_content">
-        <p class="card-text">
-          Our vision is to create a future where every Ghanaian student has the opportunity
-           to excel in the digital world, equipped with the skills and knowledge to drive
-           innovation and contribute to national development. 
-        </p> 
-      </div>
-    </div>
-
-  <!-- End of vision station -->
-  
-    
-  
-
-      <!-- Our Course Qualities -->
-      <div class="course_quality">
-        <h1>CodeVision Lab Course Qualities</h1>
-        <div class="row row row-cols-1 row-cols-md-3 g-4">
-          <div class="col">
-            <img src="img/project_img.png" alt="Icon of project">
-            <h2>Project - Base</h2>
-            <p>Build real products while learning</p>
-          </div>
-          <div class="col">
-            <img src="img/certificate_img.png" alt="Icon of certificaate" >
-            <h2>Certification</h2>
-            <p>Finish the path to get a certificate</p>
-            
-          </div>
-          <div class="col">
-            <img src="img/money_img.png">
-            <h2>Affordable</h2>
-            <p>Pay monthly, enjoy discounts by paying upfront</p>
-          </div>
-        </div>
-      </div>
-<!-- 
-  Our alumni stories
--->
-
-<div class="container-fluid our_alumni mt-5">
-  <h2>The CodeVision Lab Journey</h2>
-  <div class="header_discrip">
-    <p>
-      We believe opportunity and ambition is everywhere. What’s missing is a conducive environment. 
-      Our ambition is to create the missing conducive environment that births new generations of developers 
-      solving local problems in the most innovative ways.
-    </p>
-  </div>
-  
-  <div class="row align-items-center">
-      <!-- Left Column: Text -->
-      <div class="col-md-6">
-          <h2>Transforming Beginners into Innovators</h2>
-          <p>
-              At CodeVision Lab, we empower aspiring programmers with the skills and confidence to build real-world projects. 
-              Our hands-on training has transformed complete beginners into skilled developers, capable of working on advanced 
-              projects. This is the story of one of our alumni who started as a novice and has now 
-              built his own OS. Watch his journey and see the impact of CodeVision Lab.
-          </p>
-      </div>
-      
-      <!-- Right Column: YouTube Video -->
-      <div class="col-md-6">
-          <div class="ratio ratio-16x9">
-              <iframe src="https://www.youtube.com/embed/26qi_9bYAho" title="YouTube video" allowfullscreen></iframe>
-          </div>
-      </div>
-  </div>
-</div>
-
-<!-- 
-  End of Our alumni stories
--->
-    <!-- Our Partners section -->
-        <div class="partners_card">
-            <h1>Our Esteemed Partners</h1>
-        </div>
-            <div class="row row-cols-1 row-cols-md-3 g-4">
-              <div class="col">
-                <div class="card h-100">
-                  <img src="img/icon.png" class="card-img-top" alt="digital Garu">
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <img src="img/ferndi.jpg" class="card-img-top" alt="...">
-                </div>
-              </div>
-              <div class="col">
-                <div class="card h-100">
-                  <img src="img/yic.jpg" class="card-img-top" alt="...">
-                </div>
-              </div>
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-background">
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
             </div>
+        </div>
+        
+        <div class="container">
+            <div class="row align-items-center min-vh-100">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="hero-content">
+                        <div class="hero-badge">
+                            <i class="fas fa-rocket me-2"></i>
+                            Your Digital Career Partner
+                        </div>
+                        <h1 class="hero-title">
+                            Transform Your Future with 
+                            <span class="gradient-text">Cutting-Edge</span> 
+                            Tech Skills
+                        </h1>
+                        <p class="hero-description">
+                            Join a rapidly growing market where software developers are projected to grow 23% annually. 
+                            All companies are evolving to become tech companies - be part of this revolution.
+                        </p>
+                        
+                        <div class="hero-actions">
+                            <a href="admission.html" class="btn btn-primary btn-lg hero-btn">
+                                Start Your Journey
+                                <i class="fas fa-arrow-right ms-2"></i>
+                            </a>
+                            <a href="#courses" class="btn btn-outline-light btn-lg">
+                                <i class="fas fa-play me-2"></i>
+                                Explore Courses
+                            </a>
+                        </div>
+                        
+                        <div class="hero-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">500+</div>
+                                <div class="stat-label">Graduates</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">95%</div>
+                                <div class="stat-label">Job Placement</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">4.9/5</div>
+                                <div class="stat-label">Student Rating</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="hero-image">
+                        <div class="image-container">
+                            <img src="img/banner2.png" alt="Coding Education" class="main-image">
+                            <div class="floating-card card-1">
+                                <i class="fab fa-react"></i>
+                                <span>React.js</span>
+                            </div>
+                            <div class="floating-card card-2">
+                                <i class="fab fa-node-js"></i>
+                                <span>Node.js</span>
+                            </div>
+                            <div class="floating-card card-3">
+                                <i class="fab fa-python"></i>
+                                <span>Python</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="courses-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <div class="section-badge">
+                    <i class="fas fa-graduation-cap me-2"></i>
+                    Our Programs
+                </div>
+                <h2 class="section-title">Master In-Demand Tech Skills</h2>
+                <p class="section-description">
+                    Choose from our comprehensive programs designed to take you from beginner to industry-ready developer
+                </p>
+            </div>
+            
+            <div class="row g-4 mt-5">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="img/IMG_20210727_165912.jpg" alt="Web Design Course">
+                            <div class="course-badge">7 Weeks</div>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-category">
+                                <i class="fas fa-palette me-2"></i>
+                                Design & Frontend
+                            </div>
+                            <h3 class="course-title">Web Design Mastery</h3>
+                            <p class="course-description">
+                                Master the art of creating beautiful, responsive websites. Learn HTML, CSS, JavaScript, 
+                                and modern design principles in this intensive 7-week program.
+                            </p>
+                            <div class="course-features">
+                                <div class="feature">
+                                    <i class="fas fa-project-diagram me-2"></i>
+                                    4 Real Projects
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-users me-2"></i>
+                                    3 Weeks Mentorship
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-certificate me-2"></i>
+                                    Industry Certificate
+                                </div>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="currency">GH₵</span>
+                                    <span class="amount">1,200</span>
+                                </div>
+                                <a href="admission.html" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="course-card featured">
+                        <div class="popular-badge">Most Popular</div>
+                        <div class="course-image">
+                            <img src="img/fullstack.webp" alt="Full Stack Development">
+                            <div class="course-badge">4 Months</div>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-category">
+                                <i class="fas fa-layer-group me-2"></i>
+                                Full Stack
+                            </div>
+                            <h3 class="course-title">Full Stack Development</h3>
+                            <p class="course-description">
+                                Become a complete developer with our comprehensive full-stack program. 
+                                Master both frontend and backend technologies to build complete applications.
+                            </p>
+                            <div class="course-features">
+                                <div class="feature">
+                                    <i class="fas fa-code me-2"></i>
+                                    8 Major Projects
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-briefcase me-2"></i>
+                                    Job Guarantee
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-infinity me-2"></i>
+                                    Lifetime Support
+                                </div>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="currency">GH₵</span>
+                                    <span class="amount">3,500</span>
+                                </div>
+                                <a href="admission.html" class="btn btn-primary">Enroll Now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="course-card">
+                        <div class="course-image">
+                            <img src="img/mobile_app.webp" alt="Mobile App Development">
+                            <div class="course-badge">3 Months</div>
+                        </div>
+                        <div class="course-content">
+                            <div class="course-category">
+                                <i class="fas fa-mobile-alt me-2"></i>
+                                Mobile Development
+                            </div>
+                            <h3 class="course-title">Mobile App Development</h3>
+                            <p class="course-description">
+                                Build native and cross-platform mobile applications. Learn React Native, Flutter, 
+                                and essential mobile development concepts in this hands-on program.
+                            </p>
+                            <div class="course-features">
+                                <div class="feature">
+                                    <i class="fas fa-mobile me-2"></i>
+                                    6 Mobile Apps
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-store me-2"></i>
+                                    App Store Ready
+                                </div>
+                                <div class="feature">
+                                    <i class="fas fa-tools me-2"></i>
+                                    Modern Tools
+                                </div>
+                            </div>
+                            <div class="course-footer">
+                                <div class="course-price">
+                                    <span class="currency">GH₵</span>
+                                    <span class="amount">2,800</span>
+                                </div>
+                                <a href="admission.html" class="btn btn-outline-primary">Learn More</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-5" data-aos="fade-up">
+                <div class="consultation-cta">
+                    <h4>Not sure where to begin?</h4>
+                    <p>Book a free consultation with our career advisors</p>
+                    <a href="contact.html" class="btn btn-outline-primary btn-lg">
+                        <i class="fas fa-calendar-alt me-2"></i>
+                        Book Free Consultation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission & Vision Section -->
+    <section class="mission-vision-section">
+        <div class="container">
+            <div class="row align-items-center mb-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="content-block">
+                        <div class="section-badge">
+                            <i class="fas fa-bullseye me-2"></i>
+                            Our Mission
+                        </div>
+                        <h2 class="section-title">Bridging the Digital Divide in Ghana</h2>
+                        <p class="section-description">
+                            CodeVision's mission is to bridge the digital divide in Ghana by providing practical 
+                            technology education to students, enabling them to develop real-world applications and products. 
+                            Our organization is committed to equipping students with modern technological advancements, 
+                            fostering innovation, and preparing them for the challenges of the digital era.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="mission-image">
+                        <img src="img/mission.png" alt="Our Mission" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            
+            <div class="row align-items-center">
+                <div class="col-lg-6 order-lg-2" data-aos="fade-left">
+                    <div class="content-block">
+                        <div class="section-badge">
+                            <i class="fas fa-eye me-2"></i>
+                            Our Vision
+                        </div>
+                        <h2 class="section-title">Empowering Ghana's Digital Future</h2>
+                        <p class="section-description">
+                            Our vision is to create a future where every Ghanaian student has the opportunity to excel 
+                            in the digital world, equipped with the skills and knowledge to drive innovation and 
+                            contribute to national development.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-lg-1" data-aos="fade-right">
+                    <div class="vision-image">
+                        <img src="img/vision.png" alt="Our Vision" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Stories Section -->
+    <section class="success-stories-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <div class="section-badge">
+                    <i class="fas fa-star me-2"></i>
+                    Success Stories
+                </div>
+                <h2 class="section-title">The CodeVision Lab Journey</h2>
+                <p class="section-description">
+                    We believe opportunity and ambition is everywhere. What's missing is a conducive environment. 
+                    Our ambition is to create the missing conducive environment that births new generations of developers 
+                    solving local problems in the most innovative ways.
+                </p>
+            </div>
+            
+            <div class="row align-items-center mt-5">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <div class="story-content">
+                        <h3>Transforming Beginners into Innovators</h3>
+                        <p>
+                            At CodeVision Lab, we empower aspiring programmers with the skills and confidence to build 
+                            real-world projects. Our hands-on training has transformed complete beginners into skilled 
+                            developers, capable of working on advanced projects.
+                        </p>
+                        <p>
+                            This is the story of one of our alumni who started as a novice and has now built his own 
+                            operating system. Watch his journey and see the impact of CodeVision Lab.
+                        </p>
+                        <div class="story-stats">
+                            <div class="stat">
+                                <strong>6 Months</strong>
+                                <span>Training Duration</span>
+                            </div>
+                            <div class="stat">
+                                <strong>Zero to Hero</strong>
+                                <span>Complete Transformation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6" data-aos="fade-left">
+                    <div class="video-container">
+                        <div class="video-wrapper">
+                            <iframe src="https://www.youtube.com/embed/26qi_9bYAho" title="CodeVision Lab Success Story" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <div class="section-badge">
+                    <i class="fas fa-trophy me-2"></i>
+                    Why Choose Us
+                </div>
+                <h2 class="section-title">CodeVision Lab Course Qualities</h2>
+                <p class="section-description">
+                    Experience world-class education with features designed for your success
+                </p>
+            </div>
+            
+            <div class="row g-4 mt-5">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="img/project_img.png" alt="Project Based Learning">
+                        </div>
+                        <h3>Project-Based Learning</h3>
+                        <p>Build real products while learning. Work on industry-standard projects that you can showcase in your portfolio.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="img/certificate_img.png" alt="Industry Certification">
+                        </div>
+                        <h3>Industry Certification</h3>
+                        <p>Receive recognized certificates upon completion that validate your skills to employers worldwide.</p>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <img src="img/money_img.png" alt="Affordable Education">
+                        </div>
+                        <h3>Affordable & Flexible</h3>
+                        <p>Pay monthly or enjoy discounts by paying upfront. Education shouldn't break the bank.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners-section">
+        <div class="container">
+            <div class="section-header text-center" data-aos="fade-up">
+                <div class="section-badge">
+                    <i class="fas fa-handshake me-2"></i>
+                    Partnerships
+                </div>
+                <h2 class="section-title">Our Esteemed Partners</h2>
+                <p class="section-description">
+                    Collaborating with industry leaders to provide the best education experience
+                </p>
+            </div>
+            
+            <div class="row g-4 mt-5 justify-content-center">
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+                    <div class="partner-card">
+                        <img src="img/icon.png" alt="Digital Garu" class="partner-logo">
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+                    <div class="partner-card">
+                        <img src="img/ferndi.jpg" alt="Ferndi" class="partner-logo">
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6" data-aos="fade-up" data-aos-delay="300">
+                    <div class="partner-card">
+                        <img src="img/yic.jpg" alt="YIC" class="partner-logo">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content text-center" data-aos="fade-up">
+                <h2>Ready to Start Your Tech Journey?</h2>
+                <p>Join thousands of students who have transformed their careers with CodeVision Lab</p>
+                <div class="cta-buttons">
+                    <a href="admission.html" class="btn btn-primary btn-lg">
+                        Enroll Now
+                        <i class="fas fa-arrow-right ms-2"></i>
+                    </a>
+                    <a href="contact.html" class="btn btn-outline-light btn-lg">
+                        Contact Us
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <!-- Footer -->
-    <div class="footer">
-      
-      <div class="footer_wrapper">
-        <div class="row row-col-1 row-cols-md-3 g-4">
-          <div class="col">
-            <img src="img/logo.jpg" alt="Logo image" >
-          </div>
-
-          <div class="col">
-            <h3>Company</h3>
-            <a href="index.html">About</a> <br> 
-            <a href="contact.html">Contact</a> <br>
-            <a href="partnership.html">Partnership</a> <br>
-            <a href="Hire_Graduate.html">Hire our Graduates</a> 
-          </div>
-
-          <div class="col">
-            <h3>Follow Us</h3>
-            <div class="links">
-              <a href="#">LinkedIn</a><br>
-              <a href="#">Facebook</a><br>
-              <a href="#">Twitter</a><br>
+    <footer class="footer">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-brand">
+                        <img src="img/logo.jpg" alt="CodeVision Lab Logo" class="footer-logo">
+                        <h4>CodeVision Lab</h4>
+                        <p>Bridging the digital divide in Ghana through practical technology education.</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5>Company</h5>
+                        <ul>
+                            <li><a href="index.html">About</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                            <li><a href="partnership.html">Partnership</a></li>
+                            <li><a href="Hire_Graduate.html">Hire Graduates</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-2 col-md-6">
+                    <div class="footer-links">
+                        <h5>Programs</h5>
+                        <ul>
+                            <li><a href="codingClub.html">Coding Club</a></li>
+                            <li><a href="admission.html">Web Design</a></li>
+                            <li><a href="admission.html">Full Stack</a></li>
+                            <li><a href="admission.html">Mobile Dev</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 col-md-6">
+                    <div class="footer-contact">
+                        <h5>Get in Touch</h5>
+                        <div class="contact-item">
+                            <i class="fas fa-envelope me-3"></i>
+                            <span>info@codevisionlab.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone me-3"></i>
+                            <span>+233 XX XXX XXXX</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt me-3"></i>
+                            <span>Accra, Ghana</span>
+                        </div>
+                    </div>
+                </div>
             </div>
-
-          </div>
+            
+            <div class="footer-bottom">
+                <div class="row align-items-center">
+                    <div class="col-md-6">
+                        <p>&copy; 2025 CodeVision Lab. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-md-6 text-md-end">
+                        <p>Made with <i class="fas fa-heart text-danger"></i> by CodeVision Lab</p>
+                    </div>
+                </div>
+            </div>
         </div>
-          <h2>&copy 2025 CodeVision Lab, All Rights Reserved</h2>
-          <h4>Made with ❤️ by CodeVision Lab</h4>
-      </div>
-    </div>
+    </footer>
 
-    <!-- Bootstrap Javascript file  -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- AOS Animation JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    
+    <!-- Custom JavaScript -->
     <script>
-      function scrollToPrograms() {
-          var programsSection = document.getElementById("our_programs");
-          programsSection.scrollIntoView({ behavior: 'smooth' });
-      }
-  </script>
-  
+        // Initialize AOS
+        AOS.init({
+            duration: 1000,
+            easing: 'ease-in-out',
+            once: true,
+            offset: 100
+        });
+
+        // Navbar scroll effect
+        window.addEventListener('scroll', function() {
+            const navbar = document.getElementById('mainNavbar');
+            if (window.scrollY > 50) {
+                navbar.classList.add('scrolled');
+            } else {
+                navbar.classList.remove('scrolled');
+            }
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animate numbers in hero stats
+        function animateNumbers() {
+            const stats = document.querySelectorAll('.stat-number');
+            stats.forEach(stat => {
+                const target = parseInt(stat.innerText);
+                const increment = target / 100;
+                let current = 0;
+                
+                const timer = setInterval(() => {
+                    current += increment;
+                    if (current >= target) {
+                        current = target;
+                        clearInterval(timer);
+                    }
+                    stat.innerText = Math.floor(current) + (stat.innerText.includes('%') ? '%' : stat.innerText.includes('.') ? '/5' : '+');
+                }, 20);
+            });
+        }
+
+        // Trigger number animation when hero section is visible
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateNumbers();
+                    observer.unobserve(entry.target);
+                }
+            });
+        });
+
+        const heroStats = document.querySelector('.hero-stats');
+        if (heroStats) {
+            observer.observe(heroStats);
+        }
+    </script>
 </body>
 </html>
